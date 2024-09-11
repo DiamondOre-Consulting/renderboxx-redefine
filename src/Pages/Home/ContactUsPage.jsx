@@ -3,6 +3,7 @@ import Footer from "../../Components/Home/Footer";
 import Navbar from "../../Components/Home/Navbar";
 import aarti from '../../assets/aarti.jpg'; // Background image
 import trishul from '../../assets/trishul.png';
+import ChatBoat from "./ChatBoat";
 
 const ContactUsPage = () => {
   useEffect(() => {
@@ -129,6 +130,8 @@ const ContactUsPage = () => {
         </main>
         <Footer />
       </div>
+
+      <ChatBoat/>
     </>
   );
 };

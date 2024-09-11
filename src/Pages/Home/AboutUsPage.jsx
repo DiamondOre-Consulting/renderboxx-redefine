@@ -9,6 +9,7 @@ import image from "../../assets/haridwar2.png";
 import trishul from "../../assets/trishul.png";
 import RedefineOwner from "../../assets/RedefineOwner.jpg";
 import mediafull from '../../assets/mediafull.jpg';
+import ChatBoat from "./ChatBoat";
 
 const AboutUsPage = () => {
   useEffect(() => {
@@ -136,6 +137,8 @@ const AboutUsPage = () => {
           <Footer />
         </div>
       </div>
+
+      <ChatBoat/>
     </>
   );
 };
