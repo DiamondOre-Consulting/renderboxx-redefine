@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import chatboat from "../../assets/Chatboat.png";
+import chatboat from '../../assets/chatboat.png'
 import popupimg from "../../assets/Logo robo recruiter 1.gif";
 
 const ChatBoat = () => {
