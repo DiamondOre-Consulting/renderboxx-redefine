@@ -1,0 +1,27 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.headings{
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  word-spacing: 2px;
+  
+}
+
+.headingp1{
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  word-spacing: 4px;
+  letter-spacing: 3px;
+}
