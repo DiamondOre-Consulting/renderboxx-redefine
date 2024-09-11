@@ -9,6 +9,7 @@ import Testimonials from "../../Components/Home/Testimonials";
 import Footer from "../../Components/Home/Footer";
 import Projects from "../../Components/Home/Projects";
 import Navbar from "../../Components/Home/Navbar";
+import ChatBoat from "./ChatBoat";
 
 const HomeMain = () => {
 
@@ -35,6 +36,8 @@ const HomeMain = () => {
           {/* <Testimonials/> */}
           <ContactUs/>
           <Footer/>
+
+          <ChatBoat/>
         </div>
       </div>
     </div>
