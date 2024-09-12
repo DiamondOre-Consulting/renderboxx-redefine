@@ -22,7 +22,7 @@ const ChatBoat = () => {
   const chatboxBodyRef = useRef(null);
 
   const questions = [
-    "What is your Name?",
+    "How Can We Help You Today?",
     "What is your Email id?",
     "What is your Phone No?",
     "What is your Preferred City?",
