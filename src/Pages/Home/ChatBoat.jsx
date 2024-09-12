@@ -190,15 +190,15 @@ const ChatBoat = () => {
           </p>
         </div> */}
 
-        <div className="fixed bottom-12 sm:bottom-2 right-6 z-10">
+        <div className="fixed md:bottom-2 bottom-1 md:right-6 right-2 z-10">
           <div
-            className="chat-icon w-40 float-right cursor-pointer"
+            className="chat-icon w-28 md:w-40 float-right cursor-pointer"
             onClick={toggleChatbox}
           >
-            {!isOpen && <img src={chatboat} className="w-40" />}
+            {!isOpen && <img src={chatboat} className="w-28 md:w-40" />}
           </div>
           {isOpen && (
-            <div className="chatbox bg-white shadow-lg shadow-gray-400 rounded-lg p-4 w-76 md:w-96">
+            <div className="chatbox bg-white shadow-lg shadow-gray-400 rounded-lg p-4 w-72 md:w-96">
               <div className="chatbox-header flex justify-between items-center border-b-2 border-gray-200 pb-2 mb-2">
                 <span className="text-lg font-bold">Welcome</span>
                 <button
