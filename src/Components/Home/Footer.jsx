@@ -20,33 +20,34 @@ const Footer = () => {
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 w-full p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <div className="flex flex-col max-w-lg">
-              <h1 className="text-4xl text-gray-100 headings">
-                <img src={logo} alt="" className="w-40" />
-              </h1>
-              <p className="text-gray-100 mt-6 text-justify">
-                Redefine Group, founded by Chander Mohan in 2006, transforms
-                spaces with innovative ideas, delivering projects across Delhi,
-                NCR, Uttarakhand, and more. Currently developing "Haridwar
-                Paradise" township.
-              </p>
-            </div>
+        <div className="flex flex-col md:flex-row md:justify-between">
+          {/* About Section */}
+          <div className="mb-6 md:mb-0 flex flex-col max-w-lg">
+            <h1 className="text-3xl md:text-4xl text-gray-100 mb-4">
+              <img src={logo} alt="Redefine Group Logo" className="w-32 md:w-40" />
+            </h1>
+            <p className="text-gray-100 text-sm md:text-base">
+              Redefine Group, founded by Chander Mohan in 2006, transforms
+              spaces with innovative ideas, delivering projects across Delhi,
+              NCR, Uttarakhand, and more. Currently developing "Haridwar
+              Paradise" township.
+            </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 md:ml-40 ml-0">
+
+          {/* Contact Information */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:ml-8">
             <div>
               <h2 className="mb-6 text-lg font-semibold text-gray-100 uppercase">
                 CONTACT INFORMATION
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-gray-500 font-medium text-sm md:text-base">
                 <li className="mb-4">
                   <a
                     href="#"
-                    className="hover:underline flex items-start text-gray-200 text-sm"
+                    className="hover:underline flex items-start text-gray-200"
                   >
                     <svg
-                      className="h-6 w-6 text-gray-100 mr-1"
+                      className="h-6 w-6 text-gray-100 mr-2"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -70,7 +71,7 @@ const Footer = () => {
                 <li className="mb-4">
                   <a href="#" className="hover:underline flex text-gray-100">
                     <svg
-                      className="h-6 w-6 text-gray-100 mr-1"
+                      className="h-6 w-6 text-gray-100 mr-2"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -86,19 +87,18 @@ const Footer = () => {
                     +91 9582000035
                   </a>
                 </li>
-
                 <li>
                   <a href="#" className="hover:underline flex text-gray-100">
                     <svg
-                      class="h-6 w-6 text-gray-100 mr-1"
+                      className="h-6 w-6 text-gray-100 mr-2"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
@@ -108,44 +108,51 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="ml-4 md:ml-8">
+            {/* Follow Us Section */}
+            <div className="md:ml-20">
               <h2 className="mb-6 text-lg font-semibold text-gray-100 uppercase">
                 FOLLOW US
               </h2>
-              <ul className="text-gray-500 font-medium">
-                <div className="flex flex-wrap space-x-4">
+              <ul className="flex flex-wrap gap-4">
+                <li>
                   <a
                     href="https://www.facebook.com/Redefinegroups"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={facebook} alt="" className="w-10" />
+                    <img src={facebook} alt="Facebook" className="w-8 md:w-10" />
                   </a>
-
+                </li>
+                <li>
                   <a
                     href="https://www.youtube.com/@redefinegroup178"
                     target="_blank"
-                    className=""
                     rel="noopener noreferrer"
                   >
-                    <img src={youtube} alt="" className="w-10" />
+                    <img src={youtube} alt="YouTube" className="w-8 md:w-10" />
                   </a>
-
+                </li>
+                <li>
                   <a
                     href="https://www.instagram.com/RedefineGroup"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:bg-purple-600"
                   >
-                    <img src={insta} alt="" className="w-10" />
+                    <img src={insta} alt="Instagram" className="w-8 md:w-10" />
                   </a>
-                </div>
-                <div className="mt-10 ">
-                <Link className="" to={'/contactus'}><span className="bg-black rounded-md px-6 py-2 text-gray-100 ">Request a CallBack</span></Link>
-                </div>
+                </li>
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* Call to Action Button */}
+        <div className="mt-6 md:mt-5 flex justify-center">
+          <Link to={'/contactus'}>
+            <span className="bg-black rounded-md px-6 py-2 text-gray-100 hover:bg-gray-800">
+              Request a CallBack
+            </span>
+          </Link>
         </div>
       </div>
     </footer>

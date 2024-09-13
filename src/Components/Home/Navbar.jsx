@@ -300,6 +300,9 @@ const Navbar = () => {
           <a href="https://www.youtube.com/@redefinegroup178" target="_blank">
             <FaYoutube className="text-gray-100 hover:text-primary text-3xl" />
           </a>
+          <a href="https://www.youtube.com/@redefinegroup178" target="_blank">
+            <FaInstagram className="text-gray-100 hover:text-primary text-3xl" />
+          </a>
         </div>
       </div>
     </nav>
