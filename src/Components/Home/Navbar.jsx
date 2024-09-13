@@ -99,11 +99,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-24">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <img className="h-20 w-auto" src={logo} alt="Logo" />
+          <img className="h-10 w-auto" src={logo} alt="Logo" />
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex text-xl font-bold space-x-8">
+        <div className="hidden md:flex text-lg font-bold space-x-8">
           <Link
             to={"/"}
             className="text-gray-100 hover:text-primary transition-colors"
@@ -191,6 +191,13 @@ const Navbar = () => {
             className="text-gray-100 hover:text-primary transition-colors"
           >
             Contact Us
+          </Link>
+
+          <Link
+            to={"/carrer"}
+            className="text-gray-100 hover:text-primary transition-colors"
+          >
+            Career
           </Link>
         </div>
 

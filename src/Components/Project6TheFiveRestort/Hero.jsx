@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
-        The Five Resort
+      The Five Resort Leading Brand
       </div>
 
       {/* Blinking text animation */}

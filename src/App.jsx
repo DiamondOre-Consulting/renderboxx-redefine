@@ -9,6 +9,7 @@ import Project3HomeMain from "./Pages/Project3CandolimLuxfortPage/Project3HomeMa
 import Project4ApParkAvenue from "./Pages/Project4ApParkAvenue/Project4ApParkAvenue"
 import Project5Rishikexhparadise from "./Pages/Project5RishikeshParadise/Project5Rishikexhparadise"
 import Project6TheFiveResort from "./Pages/Project6TheFiveResort/Project6TheFiveResort"
+import CareerForm from "./Pages/Home/CarrerForm"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route index element={  <HomeMain/>}/>
           <Route path="/aboutus" element={<AboutUsPage/>}/>
           <Route path="/contactus" element={<ContactUsPage/>}/>
+          <Route path="/carrer" element={<CareerForm/>}/>
           <Route path="/haridwarparadise" element={<Project1HomeMain/>}/>
           <Route path="/devprayagparadise" element={<Project2HomeMain/>}/>
           <Route path="/Candolimlaxfort" element={<Project3HomeMain/>}/>

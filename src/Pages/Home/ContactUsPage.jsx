@@ -1,32 +1,51 @@
 import React, { useEffect } from "react";
 import Footer from "../../Components/Home/Footer";
 import Navbar from "../../Components/Home/Navbar";
-import aarti from '../../assets/aarti.jpg'; // Background image
-import trishul from '../../assets/trishul.png';
-import ChatBoat from "./ChatBoat";
+import aarti from "../../assets/aarti.jpg"; // Background image
+import trishul from "../../assets/trishul.png";
+import chatboat from "../../assets/chatboat.png";
 
 const ContactUsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+
+  const handleWhatsAppChat = () => {
+    const url = `https://api.whatsapp.com/send?phone= 9582000035`;
+    window.open(url, "_blank");
+  };
+
+
   return (
     <>
       <Navbar />
-      <div className="flex flex-col "> {/* Full height container */}
-        
+      <div className="flex flex-col ">
+        {" "}
+        {/* Full height container */}
         {/* Background image section */}
-        <div className="relative w-full h-[70vh] md:h-[80vh] bg-gray-900" 
-             style={{ backgroundImage: `url(${aarti})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div
+          className="relative w-full h-[70vh] md:h-[80vh] bg-gray-900"
+          style={{
+            backgroundImage: `url(${aarti})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
             <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center headings">
               Contact Us
             </h1>
-            <img src={trishul} alt="Trishul Icon" className="h-16 md:h-20 mt-4 md:mt-0" />
+            <img
+              src={trishul}
+              alt="Trishul Icon"
+              className="h-16 md:h-20 mt-4 md:mt-0"
+            />
           </div>
         </div>
-
-        <main className="flex-grow mt-6 px-4 md:px-12 py-10 lg:px-24"> {/* Responsive margins */}
+        <main className="flex-grow mt-6 px-4 md:px-12 py-10 lg:px-24">
+          {" "}
+          {/* Responsive margins */}
           <div className="relative mb-12">
             <div className="grid md:grid-cols-6 gap-6">
               <div className="col-span-6 md:col-span-2 flex flex-col space-y-8">
@@ -117,7 +136,6 @@ const ContactUsPage = () => {
               </div>
             </div>
           </div>
-
           <div className="w-full">
             <iframe
               className="w-full h-96 w-full mb-10"
@@ -131,7 +149,9 @@ const ContactUsPage = () => {
         <Footer />
       </div>
 
-      <ChatBoat/>
+      <div className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer" onClick={handleWhatsAppChat}>
+        <img src={chatboat} alt="" className="w-28 md:w-40" />
+      </div>
     </>
   );
 };

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import footervedio from '../../assets/footervedio.mp4';
-import logo from '../../assets/redefinelogo.png'
+import footervedio from "../../assets/footervedio.mp4";
+import logo from "../../assets/redefinelogo.png";
+import facebook from "../../assets/facebook.png";
+import insta from "../../assets/instagram.png";
+import youtube from "../../assets/youtube.png";
 
 const Footer = () => {
   return (
@@ -21,7 +24,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex flex-col max-w-lg">
               <h1 className="text-4xl text-gray-100 headings">
-                <img src={logo} alt="" className="w-40"/>
+                <img src={logo} alt="" className="w-40" />
               </h1>
               <p className="text-gray-100 mt-6 text-justify">
                 Redefine Group, founded by Chander Mohan in 2006, transforms
@@ -64,7 +67,7 @@ const Footer = () => {
                     B-48A GF, Main Road, Kalka Ji New Delhi – 110019
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a href="#" className="hover:underline flex text-gray-100">
                     <svg
                       className="h-6 w-6 text-gray-100 mr-1"
@@ -83,10 +86,29 @@ const Footer = () => {
                     +91 9582000035
                   </a>
                 </li>
+
+                <li>
+                  <a href="#" className="hover:underline flex text-gray-100">
+                    <svg
+                      class="h-6 w-6 text-gray-100 mr-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    support@redefinegroup.com
+                  </a>
+                </li>
               </ul>
             </div>
 
-            <div className="ml-4 md:ml-20">
+            <div className="ml-4 md:ml-8">
               <h2 className="mb-6 text-lg font-semibold text-gray-100 uppercase">
                 FOLLOW US
               </h2>
@@ -95,40 +117,27 @@ const Footer = () => {
                   <a
                     href="https://www.facebook.com/Redefinegroups"
                     target="_blank"
-                    className="bg-gray-600 p-2 hover:bg-blue-600 group"
                     rel="noopener noreferrer"
                   >
-                    <svg
-                      className="h-8 w-8 font-bold text-gray-400 group-hover:text-white"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
+                    <img src={facebook} alt="" className="w-10" />
                   </a>
 
                   <a
                     href="https://www.youtube.com/@redefinegroup178"
                     target="_blank"
-                    className="bg-gray-600 p-2 hover:bg-red-600 group"
+                    className=""
                     rel="noopener noreferrer"
                   >
-                    <svg
-                      className="h-8 w-8 font-bold text-gray-400 group-hover:text-white"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-                    </svg>
+                    <img src={youtube} alt="" className="w-10" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/RedefineGroup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:bg-purple-600"
+                  >
+                    <img src={insta} alt="" className="w-10" />
                   </a>
                 </div>
               </ul>

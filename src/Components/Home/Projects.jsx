@@ -8,14 +8,15 @@ import candolimluxfort from "../../assets/candolimluxfort.jpg";
 import project4appark from '../../assets/project4appark.jpg';
 import project5 from '../../assets/project5.jpg';
 import project6 from '../../assets/project6.jpg';
+import hardwargate from '../../assets/hridwargate.jpg'
 
 // Sample project data with image fitting style
 const projects = [
   {
     title: "Haridwar Paradise",
-    image: haridwarlogo,
+    image: hardwargate,
     link: "/haridwarparadise",
-    fit: "contain", // Image fit style
+    fit: "cover", // Image fit style
   },
   {
     title: "Candolim Luxfort",
@@ -45,7 +46,7 @@ const upcomingProjects = [
     fit: "cover", // Image fit style
   },
   {
-    title: "The Five Resort",
+    title: "The Five Resort Leading Brand",
     image: project6,
     link: "/thefiveresort",
     fit: "cover", // Image fit style

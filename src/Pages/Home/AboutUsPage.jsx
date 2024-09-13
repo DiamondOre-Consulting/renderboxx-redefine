@@ -8,13 +8,19 @@ import Navbar from "../../Components/Home/Navbar";
 import image from "../../assets/haridwar2.png";
 import trishul from "../../assets/trishul.png";
 import RedefineOwner from "../../assets/RedefineOwner.jpg";
-import mediafull from '../../assets/mediafull.jpg';
-import ChatBoat from "./ChatBoat";
+import mediafull from "../../assets/mediafull.jpg";
+import chatboat from "../../assets/chatboat.png";
 
 const AboutUsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleWhatsAppChat = () => {
+    const url = `https://api.whatsapp.com/send?phone= 9582000035`;
+    window.open(url, "_blank");
+  };
+
 
   return (
     <>
@@ -29,7 +35,7 @@ const AboutUsPage = () => {
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center mx-auto mt-20 z-10">
-            <h1 className="text-white text-5xl md:text-8xl font-bold headings ">
+            <h1 className="text-white text-5xl md:text-8xl font-bold headings">
               About us
             </h1>
             <p className="text-gray-100 font-semibold text-sm md:text-2xl text-wrap mt-2">
@@ -38,7 +44,7 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        <div className="">
+        <div>
           {/* Company profile */}
           <div>
             <p className="text-lg p-4 md:p-8">
@@ -47,19 +53,21 @@ const AboutUsPage = () => {
                 <img src={trishul} alt="" className="w-80 md:px-0" />
               </div>
               <p className="text-xl text-justify">
-                Over 17 years, Redefine Group has single-mindedly focused on
-                innovative ideas. Taking ordinary spaces and transforming them
-                into something spectacular. Redefine Group is a leading real
-                estate organization based in Delhi and Uttarakhand. It was
-                incorporated in the year 2006. The company was founded by Mr.
-                Chander Mohan. Chander Mohan is the managing director of the
-                company, till date the company has done more than 2 lac sq ft of
-                plots and real estate development in Delhi, NCR, Uttarakhand,
-                Bhopal, Rajasthan, Vrindavan, Goa, etc. They have delivered 6+
-                projects including plots and residential. The company is
-                currently executing a 70-acre township in Haridwar named
-                Haridwar Paradise and has upcoming projects in Rishikesh and
-                Devprayag.
+                Over 17 years, Redefine Group has focused on creating
+                extraordinary spaces, transforming the ordinary into the
+                spectacular. Based in Delhi and Uttarakhand, Redefine Group is a
+                leader in real estate development and innovation. Established in
+                2006 by Mr. Chander Mohan, the company has delivered over
+                200,000 sq. ft. of real estate projects, including residential
+                and plotted developments across Delhi NCR, Uttarakhand, Goa, and
+                Bhopal.
+                <br />
+                <br />
+                The Group’s landmark project, *Haridwar Paradise*, is an
+                ambitious 70-acre township that exemplifies its commitment to
+                quality and design. Future projects in Rishikesh and Devprayag
+                continue to showcase Redefine Group’s vision for integrated
+                living spaces.
               </p>
             </p>
           </div>
@@ -73,61 +81,60 @@ const AboutUsPage = () => {
               <img src={trishul} alt="" className="w-80 md:px-0" />
             </div>
             <div className="flex md:flex justify-between md:px-20 md:block hidden">
-              <div className="  rounded-lg p-2">
-                {/* <div className="flex "> 
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
-                  <div className="w-5 h-5 bg-black rounded-full ml-2"></div>
-                  <div className="w-5 h-5 bg-black rounded-full ml-2"></div>
-                </div> */}
-                <img src={media1} alt="" className="w-full rounded-lg p-4 border border-2" />
+              <div className="rounded-lg p-2">
+                <img
+                  src={media1}
+                  alt=""
+                  className="w-full rounded-lg p-4 border border-2"
+                />
               </div>
-              <div className=" rounded-lg p-2">
-            
-                <img src={media2} alt="" className="w-full rounded-lg  p-4 border border-2" />
+              <div className="rounded-lg p-2">
+                <img
+                  src={media2}
+                  alt=""
+                  className="w-full rounded-lg p-4 border border-2"
+                />
               </div>
             </div>
-
-            <img
-              src={mediafull}
-              alt=""
-              className="md:hidden block"
-            />
+            <img src={mediafull} alt="" className="md:hidden block" />
           </div>
 
-          {/* WORDS FROM CHAIRMAN */}
+          {/* Words from Chairman */}
           <div className="mt-10 p-4 md:p-8">
             <h1 className="headings text-5xl md:text-7xl capitalize">
               Sovereignty
             </h1>
-            <div className=" mb-10">
+            <div className="mb-10">
               <img src={trishul} alt="" className="w-80 md:px-0" />
             </div>
-            <div className="grid md:grid-cols-6 gap-8  items-center">
+            <div className="grid md:grid-cols-6 gap-8 items-center">
               <div className="col-span-4 text-justify text-xl text-gray-700">
                 <p>
-                  Founded by Mr. Chander Mohan, the Redefine Group has a leading
-                  presence across real estate, financial services, e-commerce,
-                  software, and healthcare.
+                  Founded by Mr. Chander Mohan, Redefine Group is a dominant
+                  player in the real estate, financial services, and e-commerce
+                  sectors.
                 </p>
                 <p>
-                  The Redefine Group strongly believes that it has a pivotal
-                  role to play in shaping the lives of ordinary people to
-                  transform them into someone extraordinary. Through its various
-                  consumer-facing businesses, the Group provides a robust
-                  platform to every Indian to realize their potential and lead a
-                  lifestyle that everyone desires.
+                  The Group is committed to empowering individuals to realize
+                  their full potential and lead exceptional lives. Through its
+                  diverse businesses, Redefine Group offers platforms that
+                  impact millions across India.
                 </p>
                 <p>
-                  Mr. Chander Mohan, born on 27 May 1984, in Etawah, UP. He is
-                  the younger son of the visionary Shri Hotilal and lives with
-                  his family in Delhi. Graduated (B.Tech. in Electronics and
-                  Communications) BTEC – HIGHER NATIONAL DIPLOMA (HND) In
-                  Electrical/Electronic Engineering, U.K. Edxcel
+                  Mr. Chander Mohan, born on May 27, 1984, in Etawah, UP, is the
+                  visionary leader behind Redefine Group. He has extensive
+                  experience in sales and distribution, having previously been
+                  the No. 1 channel partner of Reliance Life Insurance and head
+                  of distribution in 11 states. He was also a core committee
+                  member of Reliance Life Insurance. Mr. Mohan holds a B.Tech in
+                  Electronics and Communications and a Higher National Diploma
+                  (HND) in Electrical/Electronic Engineering from the U.K.
                 </p>
               </div>
-              <div className="flex flex-col col-span-2 items-center  ">
+
+              <div className="flex flex-col col-span-2 items-center">
                 <img src={RedefineOwner} alt="" className="w-100 rounded-lg" />
-                <p className="font-bold text-2xl mt-8 headings ">
+                <p className="font-bold text-2xl mt-8 headings">
                   Mr. Chander Mohan
                 </p>
               </div>
@@ -138,7 +145,9 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <ChatBoat/>
+      <div className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer" onClick={handleWhatsAppChat}>
+        <img src={chatboat} alt="" className="w-28 md:w-40" />
+      </div>
     </>
   );
 };
