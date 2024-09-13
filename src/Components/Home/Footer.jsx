@@ -140,6 +140,9 @@ const Footer = () => {
                     <img src={insta} alt="" className="w-10" />
                   </a>
                 </div>
+                <div className="mt-10 ">
+                <Link className="" to={'/contactus'}><span className="bg-black rounded-md px-6 py-2 text-gray-100 ">Request a CallBack</span></Link>
+                </div>
               </ul>
             </div>
           </div>
