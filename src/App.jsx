@@ -10,6 +10,7 @@ import Project4ApParkAvenue from "./Pages/Project4ApParkAvenue/Project4ApParkAve
 import Project5Rishikexhparadise from "./Pages/Project5RishikeshParadise/Project5Rishikexhparadise"
 import Project6TheFiveResort from "./Pages/Project6TheFiveResort/Project6TheFiveResort"
 import CareerForm from "./Pages/Home/CarrerForm"
+import Project7Gangavillas from "./Pages/Project7GangaVillas/Project7Gangavillas"
 
 function App() {
 
@@ -27,7 +28,9 @@ function App() {
           <Route path="/Candolimlaxfort" element={<Project3HomeMain/>}/>
           <Route path="/apparkavenue" element={<Project4ApParkAvenue/>}/>
           <Route path="/rishikeshparadise" element={<Project5Rishikexhparadise/>}/>
-          <Route path="/thefiveresort" element={<Project6TheFiveResort/>}/>
+          <Route path="/thefivestarresort" element={<Project6TheFiveResort/>}/>
+          <Route path="/gangavillas" element={<Project7Gangavillas/>}/>
+
           </Route>
       </Routes>
     </BrowserRouter>

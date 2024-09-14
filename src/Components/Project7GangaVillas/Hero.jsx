@@ -1,5 +1,6 @@
 import React from "react";
-import project5 from '../../assets/project6.jpg';
+import project7 from '../../assets/project7.jpg';
+
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       className="relative w-full h-screen bg-cover bg-center"
       id="home"
       style={{
-        backgroundImage: `url(${project5})`,
+        backgroundImage: `url(${project7})`,
       }}
     >
       {/* Dark overlay */}
@@ -27,7 +28,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
-      The Five Star Resort Leading Brand
+      Ganga Villas
       </div>
 
       {/* Blinking text animation */}

@@ -64,7 +64,7 @@ const AboutUsPage = () => {
                 <br />
                 <br />
                 The Group’s landmark project, *Haridwar Paradise*, is an
-                ambitious 70-acre township that exemplifies its commitment to
+                ambitious township that exemplifies its commitment to
                 quality and design. Future projects in Rishikesh and Devprayag
                 continue to showcase Redefine Group’s vision for integrated
                 living spaces.

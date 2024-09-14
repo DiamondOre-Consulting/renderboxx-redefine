@@ -9,6 +9,7 @@ import project4appark from '../../assets/project4appark.jpg';
 import project5 from '../../assets/project5.jpg';
 import project6 from '../../assets/project6.jpg';
 import hardwargate from '../../assets/hridwargate.jpg'
+import project7 from '../../assets/project7.jpg'
 
 // Sample project data with image fitting style
 const projects = [
@@ -46,9 +47,17 @@ const upcomingProjects = [
     fit: "cover", // Image fit style
   },
   {
-    title: "The Five Resort Leading Brand",
+    title: "The Five Star Resort Leading Brand",
     image: project6,
-    link: "/thefiveresort",
+    link: "thefivestarresort",
+    fit: "cover", // Image fit style
+  },
+
+
+  {
+    title: "Ganga Villas",
+    image: project7,
+    link: "/gangavillas",
     fit: "cover", // Image fit style
   },
 ];
@@ -74,7 +83,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit}`}
+                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit} `}
                 />
                 {/* Overlay with hover effect */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
