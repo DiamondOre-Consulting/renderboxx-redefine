@@ -290,6 +290,14 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
+
+          <Link
+            to={"/carrer"}
+            className="block px-4 py-2 text-gray-100 hover:bg-gray-700"
+            onClick={() => setShowMenu(false)}
+          >
+           Career
+          </Link>
         </div>
 
         {/* Social Icons */}
