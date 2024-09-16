@@ -34,7 +34,7 @@ const Hero = () => {
 
 
       <div className="absolute inset-0 flex justify-center items-center">
-        <h1 className="text-sm md:text-xl font-bold text-white headingp1 mt-20 z-20"> <Link to={'/'} className="hover:text-primary">Home </Link> || Haridwar Paradise</h1>
+        <h1 className="text-sm md:text-xl font-bold text-white headingp1 mt-20 z-20"> <Link to={'/'} className="hover:text-primary">Home </Link> || Ganga Villas</h1>
       </div>
 
       {/* Blinking text animation */}

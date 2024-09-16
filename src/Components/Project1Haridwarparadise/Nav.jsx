@@ -4,7 +4,7 @@ import haridwarlogo from '../../assets/haridwarlogo.png'
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
 
-  
+
   // Function to change navbar color on scroll
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -38,12 +38,12 @@ const Nav = () => {
         </div>
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">
-          <a href="#home" className="text-gray-100 hover:text-gray-300 transition-colors">
+          {/* <a href="#home" className="text-gray-100 hover:text-gray-300 transition-colors">
             Home
           </a>
           <a href="#contact" className="text-gray-100 hover:text-gray-300 transition-colors">
             Contact us
-          </a>
+          </a> */}
           {/* <a href="#" className="text-gray-100 hover:text-blue-600 transition-colors">
             Services
           </a>
