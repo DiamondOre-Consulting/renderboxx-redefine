@@ -4,6 +4,7 @@ import haridwarlogo from '../../assets/haridwarlogo.png'
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
 
+  
   // Function to change navbar color on scroll
   const changeBackground = () => {
     if (window.scrollY >= 80) {
