@@ -18,7 +18,7 @@ const HeroSection = () => {
           AP Park Avenue
         </h1>
         
-        <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || AP Park Avenue</h1>
+        {/* <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || AP Park Avenue</h1> */}
   
 
         {/* <p className="text-white text-lg mb-4">Elegance Meets Excellence</p> */}

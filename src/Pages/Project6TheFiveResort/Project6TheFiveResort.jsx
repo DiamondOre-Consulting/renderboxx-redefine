@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Hero from '../../Components/Project6TheFiveRestort/Hero'
 import Footer from '../../Components/Project6TheFiveRestort/Footer'
+import Navbar from '../../Components/Home/Navbar';
 
 const Project6TheFiveResort = () => {
 
@@ -11,6 +12,7 @@ const Project6TheFiveResort = () => {
   
   return (
     <div>
+      <Navbar />
       <Hero/>
       <Footer/>
     </div>

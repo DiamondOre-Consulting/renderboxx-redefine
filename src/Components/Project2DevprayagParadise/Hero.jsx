@@ -24,7 +24,7 @@ const Hero = () => {
         </h1>
 
        
-        <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Devprayag Paradise</h1>
+        {/* <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Devprayag Paradise</h1> */}
      
 
       </div>

@@ -11,9 +11,9 @@ const Hero = () => {
       }}
     >
       {/* Center the "Home" text */}
-      <div className="absolute inset-0 flex justify-center items-center">
+      {/* <div className="absolute inset-0 flex justify-center items-center">
         <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Haridwar Paradise</h1>
-      </div>
+      </div> */}
 
       {/* Project name and description at the bottom */}
       <div className="absolute bottom-10 left-10 text-white">

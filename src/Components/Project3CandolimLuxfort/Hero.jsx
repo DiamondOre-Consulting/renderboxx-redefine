@@ -18,7 +18,7 @@ const Hero = () => {
         Innovative architecture in luxury living  
         </p> */}
        
-        <h1 className="text-sm md:text-xl font-bold text-white headingp1 mt-4 "> <Link to={'/'} className="hover:text-primary">Home </Link> || Candolim Luxfort</h1>
+        {/* <h1 className="text-sm md:text-xl font-bold text-white headingp1 mt-4 "> <Link to={'/'} className="hover:text-primary">Home </Link> || Candolim Luxfort</h1> */}
      
 
       </div>

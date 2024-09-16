@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Hero from '../../Components/Project5RishiKeshParadise/Hero'
 import Footer from '../../Components/Project5RishiKeshParadise/Footer'
+import Navbar from '../../Components/Home/Navbar';
 
 const Project5Rishikexhparadise = () => {
 
@@ -12,7 +13,7 @@ const Project5Rishikexhparadise = () => {
 
   return (
     <div>
-
+        <Navbar />
         <Hero/>
         <Footer/>
       
