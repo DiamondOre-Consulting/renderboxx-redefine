@@ -132,14 +132,14 @@ const Navbar = () => {
               <div className="absolute top-full mt-2 w-60 bg-black rounded-md shadow-lg transition-opacity duration-300 ease-in-out opacity-100 border-t-2 border-primary">
                 <Link
                   to={"/haridwarparadise"}
-                  target="_blank"
+                
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   Haridwar Paradise
                 </Link>
                 <Link
                   to={"/devprayagparadise"}
-                  target="_blank"
+              
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   Devprayag Paradise
@@ -147,21 +147,21 @@ const Navbar = () => {
 
                 <Link
                   to={"/Candolimlaxfort"}
-                  target="_blank"
+                 
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   Candolim Luxfort
                 </Link>
                 <Link
                   to={"/apparkavenue"}
-                  target="_blank"
+                  
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   AP Park Avenue
                 </Link>
                 <Link
                   to={"/rishikeshparadise"}
-                  target="_blank"
+                  
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   Rishikesh Paradise
@@ -170,10 +170,18 @@ const Navbar = () => {
 
                 <Link
                   to={"/thefiveresort"}
-                  target="_blank"
+                
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
-                  The Five Resort
+                  The Five Star Resort With Leading Brand 
+                </Link>
+
+                <Link
+                  to={"/gangavillas"}
+                 
+                  className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
+                >
+                  Ganga Villas 
                 </Link>
               
               </div>
