@@ -1,5 +1,6 @@
 import React from "react";
 import project5 from '../../assets/project5.jpg';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,6 +22,12 @@ const Hero = () => {
         >
           Coming Soon..
         </h1>
+
+
+     
+        <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> ||   Reshikesh Paradise</h1>
+    
+
         {/* <p className="text-lg lg:text-2xl">
           Design whispers elegance and tranquility.
         </p> */}

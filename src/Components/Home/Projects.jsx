@@ -47,7 +47,7 @@ const upcomingProjects = [
     fit: "cover", // Image fit style
   },
   {
-    title: "The Five Star Resort Leading Brand",
+    title: "The Five Star Resort With Leading Brand",
     image: project6,
     link: "thefivestarresort",
     fit: "cover", // Image fit style
@@ -89,7 +89,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <Link
                     to={project.link}
-                         target="_blank"
+                     
                     className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
                   >
                     Visit Project
@@ -135,7 +135,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <Link
                     to={project.link}
-                         target="_blank"
+                     
                     className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
                   >
                     Visit Project

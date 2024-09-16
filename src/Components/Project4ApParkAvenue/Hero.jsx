@@ -1,6 +1,7 @@
 // HeroSection.jsx
 import React from "react";
 import p3img1 from "../../assets/p4img1.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -16,8 +17,12 @@ const HeroSection = () => {
         <h1 className="text-white text-4xl md:text-6xl font-bold px-4 mb-4 headingp1">
           AP Park Avenue
         </h1>
-        <p className="text-white text-lg mb-4">Elegance Meets Excellence</p>
-        <hr className="w-24 border-white border-2 mb-6" />
+        
+        <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || AP Park Avenue</h1>
+  
+
+        {/* <p className="text-white text-lg mb-4">Elegance Meets Excellence</p> */}
+        {/* <hr className="w-24 border-white border-2 mb-6" /> */}
       </div>
     </div>
   );

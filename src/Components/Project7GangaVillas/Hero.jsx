@@ -1,5 +1,6 @@
 import React from "react";
 import project7 from '../../assets/project7.jpg';
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -29,6 +30,11 @@ const Hero = () => {
 
       <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
       Ganga Villas
+      </div>
+
+
+      <div className="absolute inset-0 flex justify-center items-center">
+        <h1 className="text-sm md:text-xl font-bold text-white headingp1 mt-20 z-20"> <Link to={'/'} className="hover:text-primary">Home </Link> || Haridwar Paradise</h1>
       </div>
 
       {/* Blinking text animation */}

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../../Components/Project2DevprayagParadise/Nav'
 import Hero from '../../Components/Project2DevprayagParadise/Hero'
 import Footer from '../../Components/Project2DevprayagParadise/Footer'
 
 const Project2HomeMain = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <>
     <div className='h-screen'>

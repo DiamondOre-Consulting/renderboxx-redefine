@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../../Components/Project1Haridwarparadise/Nav'
 import Hero from '../../Components/Project1Haridwarparadise/Hero'
 import About from '../../Components/Project1Haridwarparadise/About'
@@ -12,8 +12,9 @@ import ContactUs from '../../Components/Project1Haridwarparadise/ContactUs'
 import Footer from '../../Components/Project1Haridwarparadise/Footer'
 
 const Project1HomeMain = () => {
-
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return (
