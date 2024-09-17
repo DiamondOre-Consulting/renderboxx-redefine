@@ -21,7 +21,6 @@ const AboutUsPage = () => {
     window.open(url, "_blank");
   };
 
-
   return (
     <>
       <Navbar />
@@ -64,10 +63,10 @@ const AboutUsPage = () => {
                 <br />
                 <br />
                 The Group’s landmark project, *Haridwar Paradise*, is an
-                ambitious township that exemplifies its commitment to
-                quality and design. Future projects in Rishikesh and Devprayag
-                continue to showcase Redefine Group’s vision for integrated
-                living spaces.
+                ambitious township that exemplifies its commitment to quality
+                and design. Future projects in Rishikesh and Devprayag continue
+                to showcase Redefine Group’s vision for integrated living
+                spaces.
               </p>
             </p>
           </div>
@@ -110,25 +109,24 @@ const AboutUsPage = () => {
             <div className="grid md:grid-cols-6 gap-8 items-center">
               <div className="col-span-4 text-justify text-xl text-gray-700">
                 <p>
-                  Founded by Mr. Chander Mohan, Redefine Group is a dominant
-                  player in the real estate, financial services, and e-commerce
-                  sectors.
+                  Founded by Mr. Chander Mohan, Redefine Group is a leading
+                  player in real estate, financial services, and e-commerce.
                 </p>
                 <p>
-                  The Group is committed to empowering individuals to realize
-                  their full potential and lead exceptional lives. Through its
-                  diverse businesses, Redefine Group offers platforms that
-                  impact millions across India.
+                  The Group is dedicated to empowering individuals to achieve
+                  their full potential and lead outstanding lives. Through its
+                  diverse portfolio, Redefine Group impacts millions across
+                  India.
                 </p>
                 <p>
-                  Mr. Chander Mohan, born on May 27, 1984, in Etawah, UP, is the
-                  visionary leader behind Redefine Group. He has extensive
-                  experience in sales and distribution, having previously been
-                  the No. 1 channel partner of Reliance Life Insurance and head
-                  of distribution in 11 states. He was also a core committee
-                  member of Reliance Life Insurance. Mr. Mohan holds a B.Tech in
+                  Mr. Mohan, born on May 27, 1984, in Etawah, UP, is the
+                  visionary leader behind Redefine Group. With a B.Tech in
                   Electronics and Communications and a Higher National Diploma
-                  (HND) in Electrical/Electronic Engineering from the U.K.
+                  in Electrical/Electronic Engineering from the U.K., he has
+                  extensive experience in sales and distribution. He was
+                  formerly the No. 1 channel partner and a core committee member
+                  of Reliance Life Insurance, overseeing distribution
+                  across 11 states.
                 </p>
               </div>
 
@@ -145,7 +143,10 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer" onClick={handleWhatsAppChat}>
+      <div
+        className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer"
+        onClick={handleWhatsAppChat}
+      >
         <img src={chatboat} alt="" className="w-28 md:w-40" />
       </div>
     </>
