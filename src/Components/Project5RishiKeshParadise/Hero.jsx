@@ -1,6 +1,5 @@
 import React from "react";
-import project5 from '../../assets/project5.jpg';
-import { Link } from "react-router-dom";
+import project5 from '../../assets/rishikesh.jpg';
 
 const Hero = () => {
   return (
@@ -17,25 +16,16 @@ const Hero = () => {
       {/* Hero Text */}
       <div className="absolute flex flex-col justify-center items-center text-center inset-0 text-white z-20">
         <h1
-          className="text-3xl md:text-4xl font-bold lg:text-7xl mb-4 headingp1 text-center blink-text"
+          className="text-3xl md:text-4xl font-bold lg:text-7xl mb-4 headingp1 blink-text"
           style={{ textShadow: "3px 4px 7px 4px white", letterSpacing: '30px' }}
         >
           Coming Soon..
         </h1>
 
-
-     
-        {/* <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> ||   Reshikesh Paradise</h1> */}
-    
-
-        {/* <p className="text-lg lg:text-2xl">
-          Design whispers elegance and tranquility.
-        </p> */}
-      </div>
-
-      {/* Top Left Text */}
-      <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
-        Reshikesh Paradise
+        {/* Centered "Rishikesh Paradise" below "Coming Soon" */}
+        <h2 className="text-lg headingp1 md:text-2xl lg:text-4xl font-semibold mt-4">
+          Rishikesh Paradise
+        </h2>
       </div>
 
       {/* Blinking text animation */}

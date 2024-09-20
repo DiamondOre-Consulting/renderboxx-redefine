@@ -9,7 +9,7 @@ import Testimonials from "../../Components/Home/Testimonials";
 import Footer from "../../Components/Home/Footer";
 import Projects from "../../Components/Home/Projects";
 import Navbar from "../../Components/Home/Navbar";
-import chatboat from "../../assets/chatboat.png";
+import ChatBoat from "./ChatBoat";
 
 const HomeMain = () => {
   useEffect(() => {
@@ -39,9 +39,7 @@ const HomeMain = () => {
           <ContactUs />
           <Footer />
 
-          <div className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer"onClick={handleWhatsAppChat} >
-            <img src={chatboat} alt="" className="w-28 md:w-40" />
-          </div>
+          <ChatBoat/>
         </div>
       </div>
     </div>

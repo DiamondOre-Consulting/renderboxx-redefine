@@ -4,6 +4,7 @@ import AboutUs from '../../Components/Project3CandolimLuxfort/About'
 import OurGallary from '../../Components/Project3CandolimLuxfort/OurGallary'
 import Footer from '../../Components/Project3CandolimLuxfort/Footer'
 import Navbar from '../../Components/Home/Navbar'
+import ChatBoat from '../Home/ChatBoat'
 
 const Project3HomeMain = () => {
 
@@ -19,7 +20,9 @@ const Project3HomeMain = () => {
       <AboutUs/>
       <OurGallary/>
       <Footer/>
+      <ChatBoat/>
     </div>
+    
   )
 }
 

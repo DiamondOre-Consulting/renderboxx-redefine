@@ -6,10 +6,10 @@ import haridwarlogo from "../../assets/haridwarlogo.png";
 import trishul from "../../assets/trishul.png";
 import candolimluxfort from "../../assets/candolimluxfort.jpg";
 import project4appark from '../../assets/project4appark.jpg';
-import project5 from '../../assets/project5.jpg';
+import project5 from '../../assets/rishikesh.jpg';
 import project6 from '../../assets/project6.jpg';
 import hardwargate from '../../assets/hridwargate.jpg'
-import project7 from '../../assets/project7.jpg'
+import project7 from '../../assets/ganges.jpg'
 
 // Sample project data with image fitting style
 const projects = [
@@ -55,7 +55,7 @@ const upcomingProjects = [
 
 
   {
-    title: "Ganga Villas",
+    title: "Ganges Villas",
     image: project7,
     link: "/gangavillas",
     fit: "cover", // Image fit style
@@ -71,7 +71,8 @@ const Projects = () => {
           <h1 className="text-5xl md:text-7xl font-semibold text-center headings">
             Our Projects
           </h1>
-          <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" />
+          {/* <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" /> */}
+          <div className='w-60 h-1 mx-auto bg-black mt-2'></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 mx-10">
@@ -117,7 +118,8 @@ const Projects = () => {
           <h1 className="text-5xl md:text-7xl font-semibold text-center headings">
             Upcoming Projects
           </h1>
-          <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" />
+          {/* <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" /> */}
+          <div className='w-60 h-1 mx-auto bg-black mt-2'></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 mx-10">

@@ -11,7 +11,7 @@ const Conectivity = () => {
   const features = [
     {
       image: con1,
-      description: "Road",
+      description: "NH 58",
     },
     {
       image: con2,

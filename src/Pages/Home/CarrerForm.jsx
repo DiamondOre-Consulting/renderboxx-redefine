@@ -7,11 +7,11 @@ import {
   FaMapMarkerAlt,
   FaBriefcase,
   FaDollarSign,
-} from "react-icons/fa"; // React Icons
+} from "react-icons/fa";
 import Navbar from "../../Components/Home/Navbar";
 import Footer from "../../Components/Home/Footer";
 import emailjs from "emailjs-com"; // EmailJS for sending emails
-import chatboat from "../../assets/chatboat.png";
+import ChatBoat from "./ChatBoat";
 
 const CareerForm = () => {
   const [formData, setFormData] = useState({
@@ -28,7 +28,7 @@ const CareerForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(true);
 
   const validateForm = () => {
     let errors = {};
@@ -94,11 +94,6 @@ const CareerForm = () => {
     }
   };
 
-  const handleWhatsAppChat = () => {
-    const url = `https://api.whatsapp.com/send?phone=9582000035`;
-    window.open(url, "_blank");
-  };
-
   const closeSuccessPopup = () => {
     setIsSuccess(false); // Close the modal when clicked
   };
@@ -108,246 +103,160 @@ const CareerForm = () => {
       <Navbar />
 
       <div
-        className="relative bg-cover bg-center min-h-screen"
+        className="relative bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{
           backgroundImage: `url(${candolimluxfort})`,
           backgroundSize: "cover",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative flex justify-center items-center min-h-screen px-4 py-20">
-          <form
-            onSubmit={handleSubmit}
-            className="bg-transparent p-8 rounded-lg shadow-lg max-w-5xl w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:w-1/2"
-          >
-            <h1 className="text-3xl font-bold mb-6 text-center text-white">
-              Career Application Form
-            </h1>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="relative p-10 bg-gray-800 bg-opacity-40 rounded-lg mt-[90px] shadow-lg max-w-5xl w-full">
+          <h1 className="text-4xl font-semibold text-center text-white mb-8">
+            Career Application Form
+          </h1>
 
-            {/* Form Fields */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Full Name */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaUser className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleInputChange}
-                  placeholder="Full Name"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.fullName && (
-                <p className="text-red-500">{errors.fullName}</p>
-              )}
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex items-center border-b border-gray-500">
+              <FaUser className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleInputChange}
+                placeholder="Full Name"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.fullName && <p className="text-red-500">{errors.fullName}</p>}
 
-              {/* Email */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaEnvelope className="text-gray-100 mr-3" />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="Email Address"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.email && <p className="text-red-500">{errors.email}</p>}
+            <div className="flex items-center border-b border-gray-500">
+              <FaEnvelope className="text-gray-300 mr-3" />
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Email Address"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
 
-              {/* Phone Number */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaPhone className="text-gray-100 mr-3" />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  placeholder="Phone Number"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+            <div className="flex items-center border-b border-gray-500">
+              <FaPhone className="text-gray-300 mr-3" />
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="Phone Number"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.phone && <p className="text-red-500">{errors.phone}</p>}
 
-              {/* Address */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaMapMarkerAlt className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="address"
-                  value={formData.address}
-                  onChange={handleInputChange}
-                  placeholder="Address"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                />
-              </div>
-
-              {/* Education */}
-              <div className="flex flex-col md:col-span-2">
-                <label className="block text-sm font-semibold mb-2 text-white">
-                  Education
-                </label>
-                <textarea
-                  name="education"
-                  value={formData.education}
-                  onChange={handleInputChange}
-                  placeholder="Education Details"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  rows="2"
-                />
-              </div>
-
-              {/* Experience */}
-              <div className="flex flex-col md:col-span-2">
-                <label className="block text-sm font-semibold mb-2 text-white">
-                  Experience
-                </label>
-                <textarea
-                  name="experience"
-                  value={formData.experience}
-                  onChange={handleInputChange}
-                  placeholder="Experience Details"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  rows="2"
-                />
-              </div>
-
-              {/* Current Company */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaBriefcase className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="currentCompany"
-                  value={formData.currentCompany}
-                  onChange={handleInputChange}
-                  placeholder="Current Company"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.currentCompany && (
-                <p className="text-red-500">{errors.currentCompany}</p>
-              )}
-
-              {/* Current Designation */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaBriefcase className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="currentDesignation"
-                  value={formData.currentDesignation}
-                  onChange={handleInputChange}
-                  placeholder="Current Designation"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.currentDesignation && (
-                <p className="text-red-500">{errors.currentDesignation}</p>
-              )}
-
-              {/* Current CTC */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaDollarSign className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="currentCTC"
-                  value={formData.currentCTC}
-                  onChange={handleInputChange}
-                  placeholder="Current CTC"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.currentCTC && (
-                <p className="text-red-500">{errors.currentCTC}</p>
-              )}
-
-              {/* Expected CTC */}
-              <div className="flex items-center border-b border-gray-700">
-                <FaDollarSign className="text-gray-100 mr-3" />
-                <input
-                  type="text"
-                  name="expectedCTC"
-                  value={formData.expectedCTC}
-                  onChange={handleInputChange}
-                  placeholder="Expected CTC"
-                  className="w-full px-3 py-2 bg-transparent text-white border border-gray-300 rounded-lg focus:outline-none focus:ring-blue-500 placeholder-gray-400"
-                  required
-                />
-              </div>
-              {errors.expectedCTC && (
-                <p className="text-red-500">{errors.expectedCTC}</p>
-              )}
+            <div className="flex items-center border-b border-gray-500">
+              <FaMapMarkerAlt className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="address"
+                value={formData.address}
+                onChange={handleInputChange}
+                placeholder="Address"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+              />
             </div>
 
-            {/* Submit Button */}
-            <div className="flex justify-center mt-6">
-              <button
-                type="submit"
-                className="px-6 py-3 bg-primary w-full text-white rounded-lg  focus:outline-none focus:ring focus:ring-green-500"
-              >
-                Submit
-              </button>
+            <div className="flex items-center border-b border-gray-500 col-span-2">
+              <FaBriefcase className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="currentCompany"
+                value={formData.currentCompany}
+                onChange={handleInputChange}
+                placeholder="Current Company"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
             </div>
+            {errors.currentCompany && (
+              <p className="text-red-500 col-span-2">{errors.currentCompany}</p>
+            )}
+
+            <div className="flex items-center border-b border-gray-500">
+              <FaBriefcase className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="currentDesignation"
+                value={formData.currentDesignation}
+                onChange={handleInputChange}
+                placeholder="Current Designation"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.currentDesignation && (
+              <p className="text-red-500 col-span-2">{errors.currentDesignation}</p>
+            )}
+
+            <div className="flex items-center border-b border-gray-500">
+              <FaDollarSign className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="currentCTC"
+                value={formData.currentCTC}
+                onChange={handleInputChange}
+                placeholder="Current CTC"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.currentCTC && (
+              <p className="text-red-500 col-span-2">{errors.currentCTC}</p>
+            )}
+
+            <div className="flex items-center border-b border-gray-500">
+              <FaDollarSign className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="expectedCTC"
+                value={formData.expectedCTC}
+                onChange={handleInputChange}
+                placeholder="Expected CTC"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.expectedCTC && (
+              <p className="text-red-500 col-span-2">{errors.expectedCTC}</p>
+            )}
           </form>
 
-          {/* WhatsApp Chat Button */}
-          <div className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer" onClick={handleWhatsAppChat}>
-        <img src={chatboat} alt="" className="w-28 md:w-40" />
-      </div>
+          {/* Submit Button */}
+          <div className="flex justify-center mt-6">
+            <button
+              type="submit"
+              className="px-6 py-3 bg-primary text-white text-lg rounded-md hover:bg-green-700 transition duration-300"
+            >
+              Submit Application
+            </button>
+          </div>
 
           {/* Success Popup */}
           {isSuccess && (
-            <div className="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-75 z-50">
-              {/* Modal Content */}
-              <div className="bg-white p-6 m-4 md:m-0 rounded-lg shadow-lg flex flex-col justify-center items-center text-center relative">
-                {/* Close Icon (SVG) */}
-                <svg
-                  onClick={closeSuccessPopup} // Attach the close function here
-                  title="Close"
-                  tabindex="0" // Allows keyboard navigation
-                  className="h-6 w-6 cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-gray-600" // Positioned at top-right
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-70 z-50">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-bold mb-4">Thank You !!!</h2>
+                <p>Your application has been successfully submitted!</p>
+                <button
+                  onClick={closeSuccessPopup}
+                  className="mt-4 px-6 py-2 bg-primary text-white rounded-md"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-
-                {/* Success Checkmark Icon */}
-                <div className="mx-auto flex-shrink-0 flex mb-4 items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-20 sm:w-20">
-                  <svg
-                    className="h-10 w-10 text-green-600"
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 13l4 4L19 7"
-                    ></path>
-                  </svg>
-                </div>
-
-                {/* Success Message */}
-                <p className="text-gray-700 mb-6 headings text-lg">
-                  Thank you for filling out the form. We will connect with you
-                  soon!
-                </p>
+                  Close
+                </button>
               </div>
             </div>
           )}

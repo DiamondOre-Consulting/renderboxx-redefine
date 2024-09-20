@@ -22,14 +22,16 @@ const Hero = () => {
         >
           Coming Soon..
         </h1>
+
+        <div className="  text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
+      The Five Star Resort With Leading Brand
+      </div>
         {/* <p className="text-lg lg:text-2xl">
           Design whispers elegance and tranquility.
         </p> */}
       </div>
 
-      <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
-      The Five Star Resort With Leading Brand
-      </div>
+      
 
       
       <div className="absolute inset-0 flex justify-center items-center">

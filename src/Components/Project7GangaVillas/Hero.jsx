@@ -1,5 +1,5 @@
 import React from "react";
-import project7 from '../../assets/project7.jpg';
+import project7 from '../../assets/ganges.jpg';
 import { Link } from "react-router-dom";
 
 
@@ -23,14 +23,15 @@ const Hero = () => {
         >
           Coming Soon..
         </h1>
+        <div className="text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
+      Gangaes Villas
+      </div>
         {/* <p className="text-lg lg:text-2xl">
           Design whispers elegance and tranquility.
         </p> */}
       </div>
 
-      <div className="absolute top-6 left-8 text-white z-20 text-lg md:text-4xl headingp1  font-semibold">
-      Ganga Villas
-      </div>
+     
 
 
       <div className="absolute inset-0 flex justify-center items-center">

@@ -14,7 +14,8 @@ const AboutusSection = () => {
             <h1 className="text-5xl md:text-7xl font-semibold text-center headings">
               About US
             </h1>
-            <img src={trishul} alt="" className="w-60 md:px-0 px-10" />
+            <div className='w-60 h-1 mx-auto bg-black mt-1'></div>
+            {/* <img src={trishul} alt="" className="w-60 md:px-0 px-10" /> */}
           </div>
 
           {/* Responsive Flex Container for Stats */}
@@ -22,15 +23,7 @@ const AboutusSection = () => {
             {/* About Text */}
             <div className="md:col-span-9 text-center flex flex-col items-center md:items-start text-center md:text-left">
               <p className="text-lg md:text-2xl  text-center  text-justify leading-relaxed">
-                Redefine Group, founded in 2006 by Chander Mohan, is a leading
-                real estate organization based in Delhi and Uttarakhand.
-                Specializing in innovative ideas and transforming spaces, the
-                company has developed over 2 lakh sq ft of plots and real estate
-                across Delhi, NCR, Uttarakhand, Bhopal, and Goa. With six
-                completed projects, they are currently developing a township,
-                "Haridwar Paradise," in Haridwar and have upcoming projects in
-                Rishikesh and Devprayag, continuing to expand their
-                presence and expertise.
+              Redefine Group, founded in 2006 by Chander Mohan, is a leading real estate organization based in Delhi and Uttarakhand. Specializing in innovative ideas and transforming spaces, the company has developed over 2 lakh sq ft of plots and real estate across Delhi, NCR, Uttarakhand, Bhopal, and Goa. With six completed projects, in Haridwar and have upcoming projects in Rishikesh and Devprayag, continuing to expand their presence and expertise.
               </p>
               <Link
                 to={"/aboutus"}

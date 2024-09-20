@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import v1 from '../../assets/vedio3.mp4';
 
 const Hero = () => {
   return (
-    <div
-      className="relative w-full h-screen bg-cover bg-center" 
-      id="home"
-      style={{
-        backgroundImage: "url('https://www.haridwarparadise.com/images/slide-8.jpg')",
-      }}
-    >
+    <div className="relative w-full h-screen bg-cover bg-center" id="home">
+    {/* Video Background */}
+    <video
+      className="absolute inset-0 w-full h-full object-cover" // Ensure the video covers the entire screen
+      src={v1}
+      autoPlay
+      loop
+      muted // Mute the video by default
+    />
       {/* Center the "Home" text */}
       {/* <div className="absolute inset-0 flex justify-center items-center">
         <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Haridwar Paradise</h1>

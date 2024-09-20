@@ -29,8 +29,7 @@ const Footer = () => {
             <p className="text-gray-100 text-sm md:text-base">
               Redefine Group, founded by Chander Mohan in 2006, transforms
               spaces with innovative ideas, delivering projects across Delhi,
-              NCR, Uttarakhand, and more. Currently developing "Haridwar
-              Paradise" township.
+              NCR, Uttarakhand.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import v1 from '../../assets/vedio3.mp4'
+import v1 from '../../assets/hero/6.mp4'
 import { Link } from "react-router-dom";
 
 const headings = [

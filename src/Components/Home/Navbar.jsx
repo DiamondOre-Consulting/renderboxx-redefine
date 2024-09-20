@@ -181,7 +181,7 @@ const Navbar = () => {
                  
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
-                  Ganga Villas 
+                  Ganges Villas 
                 </Link>
               
               </div>

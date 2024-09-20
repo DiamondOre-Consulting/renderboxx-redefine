@@ -5,11 +5,11 @@ import Footer from "../../Components/Home/Footer";
 import media1 from "../../assets/media1.png";
 import media2 from "../../assets/media2.png";
 import Navbar from "../../Components/Home/Navbar";
-import image from "../../assets/haridwar2.png";
+import image from "../../assets/about.jpg";
 import trishul from "../../assets/trishul.png";
 import RedefineOwner from "../../assets/RedefineOwner.jpg";
 import mediafull from "../../assets/mediafull.jpg";
-import chatboat from "../../assets/chatboat.png";
+import ChatBoat from "./ChatBoat";
 
 const AboutUsPage = () => {
   useEffect(() => {
@@ -25,11 +25,12 @@ const AboutUsPage = () => {
     <>
       <Navbar />
       <div className="relative">
-        <div className="relative  w-full h-2/3">
+      <div className="relative  w-full h-screen">
           <img
             src={image} // Replace with your image URL
             alt="About Us"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover position-top"
+            style={{"objectPosition": "10% 0%"}}
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -49,7 +50,8 @@ const AboutUsPage = () => {
             <p className="text-lg p-4 md:p-8">
               <h1 className="headings text-4xl md:text-6xl">Company Profile</h1>
               <div className=" mb-6">
-                <img src={trishul} alt="" className="w-80 md:px-0" />
+              <div className="w-60 h-1 bg-black mt-2"></div>
+                {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
               </div>
               <p className="text-xl text-justify">
                 Over 17 years, Redefine Group has focused on creating
@@ -77,7 +79,8 @@ const AboutUsPage = () => {
               Media Coverage
             </h1>
             <div className="mb-6">
-              <img src={trishul} alt="" className="w-80 md:px-0" />
+            <div className="w-60 h-1 bg-black mt-2"></div>
+              {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
             </div>
             <div className="flex md:flex justify-between md:px-20 md:block hidden">
               <div className="rounded-lg p-2">
@@ -104,7 +107,8 @@ const AboutUsPage = () => {
               Sovereignty
             </h1>
             <div className="mb-10">
-              <img src={trishul} alt="" className="w-80 md:px-0" />
+              {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
+              <div className="w-60 h-1 bg-black mt-2"></div>
             </div>
             <div className="grid md:grid-cols-6 gap-8 items-center">
               <div className="col-span-4 text-justify text-xl text-gray-700">
@@ -119,13 +123,13 @@ const AboutUsPage = () => {
                   India.
                 </p>
                 <p>
-                  Mr. Mohan, born on May 27, 1984, in Etawah, UP, is the
+                Mr. Chander Mohan, born on May 27, 1984. he is the
                   visionary leader behind Redefine Group. With a B.Tech in
                   Electronics and Communications and a Higher National Diploma
                   in Electrical/Electronic Engineering from the U.K., he has
                   extensive experience in sales and distribution. He was
-                  formerly the No. 1 channel partner and a core committee member
-                  of Reliance Life Insurance, overseeing distribution
+                  formerly the No. 1 channel partner of
+                  Reliance , overseeing distribution
                   across 11 states.
                 </p>
               </div>
@@ -147,7 +151,8 @@ const AboutUsPage = () => {
         className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer"
         onClick={handleWhatsAppChat}
       >
-        <img src={chatboat} alt="" className="w-28 md:w-40" />
+     
+     <ChatBoat/>
       </div>
     </>
   );

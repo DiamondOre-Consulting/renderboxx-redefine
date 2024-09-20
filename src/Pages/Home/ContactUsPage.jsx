@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../../Components/Home/Footer";
 import Navbar from "../../Components/Home/Navbar";
-import aarti from "../../assets/aarti.jpg"; // Background image
+import aarti from "../../assets/contactusimg.jpg"; // Background image
 import trishul from "../../assets/trishul.png";
 import chatboat from "../../assets/chatboat.png";
 import emailjs from "emailjs-com";
+import ChatBoat from "./ChatBoat";
+
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -96,11 +98,11 @@ const ContactUsPage = () => {
             <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center headings">
               Contact Us
             </h1>
-            <img
+            {/* <img
               src={trishul}
               alt="Trishul Icon"
               className="h-16 md:h-20 mt-4 md:mt-0"
-            />
+            /> */}
           </div>
         </div>
 
@@ -231,12 +233,7 @@ const ContactUsPage = () => {
         </main>
         <Footer />
 
-        <div
-          className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer"
-          onClick={handleWhatsAppChat}
-        >
-          <img src={chatboat} alt="" className="w-28 md:w-40" />
-        </div>
+        <ChatBoat/>
 
         {/* Success/Failure Popup */}
         {isSuccess && (

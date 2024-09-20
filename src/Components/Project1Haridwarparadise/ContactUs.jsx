@@ -40,7 +40,7 @@ const ContactUs = () => {
                     Our Address
                   </h3>
                   <p class="text-gray-600 ">
-                    Doon Hatcheries Limited B-48A GF, Main Road, Kalka Ji 
+                  B-48A GF, Main Road, Kalka Ji 
                   </p>
                   <p class="text-gray-600 ">
                   New Delhi – 110019

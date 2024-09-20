@@ -36,10 +36,7 @@ const NearByTownShips = () => {
       image: nbt6,
       description: "Ram & Lakshman Jhula",
     },
-    {
-      image: nbt7,
-      description: "Neel Dhara Pakshi Vihar",
-    },
+ 
   ];
 
   const sliderSettings = {

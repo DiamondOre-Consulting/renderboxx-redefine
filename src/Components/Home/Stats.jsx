@@ -9,6 +9,7 @@ const Stats = () => {
           <h1 className="text-5xl font-semibold text-center headings">
             Legacy moving forward
           </h1>
+          <div className='w-60 h-1 mx-auto bg-black mt-4'></div>
           <p className="text-gray-600 mt-6 text-center text-gray-800 px-10 md:px-0">
             In a considerably short period of time, Ace has achieved excellence,
             client satisfaction, and trust and has efficiently completed

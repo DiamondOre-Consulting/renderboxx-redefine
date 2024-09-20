@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Hero from '../../Components/Project6TheFiveRestort/Hero'
 import Footer from '../../Components/Project6TheFiveRestort/Footer'
 import Navbar from '../../Components/Home/Navbar';
+import ChatBoat from '../Home/ChatBoat';
 
 const Project6TheFiveResort = () => {
 
@@ -15,6 +16,7 @@ const Project6TheFiveResort = () => {
       <Navbar />
       <Hero/>
       <Footer/>
+      <ChatBoat/>
     </div>
   )
 }

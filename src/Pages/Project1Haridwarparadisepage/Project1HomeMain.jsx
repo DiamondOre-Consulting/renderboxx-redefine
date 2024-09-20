@@ -10,6 +10,7 @@ import DownloadsHSIPApplication from '../../Components/Project1Haridwarparadise/
 import Gallery from '../../Components/Project1Haridwarparadise/Gallery'
 import ContactUs from '../../Components/Project1Haridwarparadise/ContactUs'
 import Footer from '../../Components/Project1Haridwarparadise/Footer'
+import ChatBoat from '../Home/ChatBoat'
 
 const Project1HomeMain = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Project1HomeMain = () => {
       <Gallery/>
       <ContactUs/>
       <Footer/>
-      
+      <ChatBoat/>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import AboutUs from '../../Components/Project4ApParkAvenue/About'
 import OurGallary from '../../Components/Project4ApParkAvenue/OurGallary'
 import Footer from '../../Components/Project4ApParkAvenue/Footer'
 import Navbar from '../../Components/Home/Navbar'
+import ChatBoat from '../Home/ChatBoat'
 
 const Project4ApParkAvenue = () => {
 
@@ -19,6 +20,7 @@ const Project4ApParkAvenue = () => {
       <AboutUs/>
       <OurGallary/>
       <Footer/>
+      <ChatBoat/>
     </div>
   )
 }
