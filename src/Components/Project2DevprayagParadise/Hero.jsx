@@ -22,6 +22,7 @@ const Hero = () => {
         >
           Coming Soon!!!
         </h1>
+        <h1 className="text-white text-4xl md:text-6xl text-center font-bold mb-4 headingp1">Devpravag paradise</h1>
 
        
         {/* <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Devprayag Paradise</h1> */}

@@ -11,8 +11,8 @@ const ChatBoat = () => {
 
   return (
     <div>
-    <div className="fixed md:bottom-6 bottom-1 md:right-6 right-2 z-10 cursor-pointer"onClick={handleWhatsAppChat} >
-            <img src={chastboat} alt="" className="w-10 md:w-20" />
+    <div className="fixed md:bottom-6 bottom-8 md:right-6 right-6 z-10 cursor-pointer"onClick={handleWhatsAppChat} >
+            <img src={chatboat} alt="" className="w-16 md:w-20" />
           </div>
     </div>
   );

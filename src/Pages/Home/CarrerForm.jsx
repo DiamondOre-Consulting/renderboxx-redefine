@@ -28,7 +28,7 @@ const CareerForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSuccess, setIsSuccess] = useState(true);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const validateForm = () => {
     let errors = {};
@@ -110,12 +110,12 @@ const CareerForm = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
-        <div className="relative p-10 bg-gray-800 bg-opacity-40 rounded-lg mt-[90px] shadow-lg max-w-5xl w-full">
-          <h1 className="text-4xl font-semibold text-center text-white mb-8">
+        <div className="relative p-6 sm:p-10 bg-gray-800 bg-opacity-40 rounded-lg mt-[90px] shadow-lg max-w-5xl w-full">
+          <h1 className="text-3xl sm:text-4xl font-semibold text-center text-white mb-8">
             Career Application Form
           </h1>
 
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="flex items-center border-b border-gray-500">
               <FaUser className="text-gray-300 mr-3" />
               <input
@@ -170,7 +170,7 @@ const CareerForm = () => {
               />
             </div>
 
-            <div className="flex items-center border-b border-gray-500 col-span-2">
+            <div className="flex items-center border-b border-gray-500 col-span-1 sm:col-span-2">
               <FaBriefcase className="text-gray-300 mr-3" />
               <input
                 type="text"
@@ -183,7 +183,7 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentCompany && (
-              <p className="text-red-500 col-span-2">{errors.currentCompany}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentCompany}</p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -199,7 +199,7 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentDesignation && (
-              <p className="text-red-500 col-span-2">{errors.currentDesignation}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentDesignation}</p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -215,7 +215,7 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentCTC && (
-              <p className="text-red-500 col-span-2">{errors.currentCTC}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentCTC}</p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -231,7 +231,7 @@ const CareerForm = () => {
               />
             </div>
             {errors.expectedCTC && (
-              <p className="text-red-500 col-span-2">{errors.expectedCTC}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.expectedCTC}</p>
             )}
           </form>
 
@@ -239,31 +239,14 @@ const CareerForm = () => {
           <div className="flex justify-center mt-6">
             <button
               type="submit"
-              className="px-6 py-3 bg-primary text-white text-lg rounded-md hover:bg-green-700 transition duration-300"
+              className="px-6 py-3 bg-primary text-white font-semibold rounded hover:bg-primary-dark transition"
             >
               Submit Application
             </button>
           </div>
-
-          {/* Success Popup */}
-          {isSuccess && (
-            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-70 z-50">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-bold mb-4">Thank You !!!</h2>
-                <p>Your application has been successfully submitted!</p>
-                <button
-                  onClick={closeSuccessPopup}
-                  className="mt-4 px-6 py-2 bg-primary text-white rounded-md"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
-
-      <Footer />
+      <Footer/>
     </>
   );
 };
