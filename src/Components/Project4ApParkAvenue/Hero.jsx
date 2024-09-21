@@ -2,6 +2,7 @@
 import React from "react";
 import p3img1 from "../../assets/p4img1.jpg";
 import { Link } from "react-router-dom";
+import dilivered from '../../assets/diliverd.png'
 
 const HeroSection = () => {
   return (
@@ -13,6 +14,10 @@ const HeroSection = () => {
           className="w-full h-full object-cover object-top"
         />
       </div>
+      <div className="absolute top-40 right-20">
+      <img src={dilivered} alt="" className="w-40"/>
+    </div>
+      
       <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40">
         <h1 className="text-white text-4xl md:text-6xl font-bold px-4 mb-4 headingp1">
           AP Park Avenue

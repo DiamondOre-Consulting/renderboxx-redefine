@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import v1 from '../../assets/vedio3.mp4';
+import dilivered from '../../assets/diliverd.png'
 
 const Hero = () => {
   return (
@@ -17,7 +18,9 @@ const Hero = () => {
       {/* <div className="absolute inset-0 flex justify-center items-center">
         <h1 className="text-sm md:text-xl font-bold text-white headingp1"> <Link to={'/'} className="hover:text-primary">Home </Link> || Haridwar Paradise</h1>
       </div> */}
-
+    <div className="absolute top-60 right-40">
+      <img src={dilivered} alt="" className="w-40"/>
+    </div>
       {/* Project name and description at the bottom */}
       <div className="absolute bottom-10 left-10 text-white">
         <h1 className="text-4xl lg:text-4xl mb-4 headingp1" style={{ textShadow: "3px 4px 7px 4px white" }}>
