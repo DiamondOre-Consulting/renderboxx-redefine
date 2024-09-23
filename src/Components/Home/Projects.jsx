@@ -59,7 +59,7 @@ const upcomingProjects = [
     title: "Ganges Villas",
     image: ganga,
     link: "/gangavillas",
-    fit: "contain", // Image fit style
+    fit: "cover", // Image fit style
   },
 ];
 
