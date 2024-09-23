@@ -116,7 +116,7 @@ const FeatureSection = () => {
       </div>
     </div>
   
-    <img src={trishul} alt="Trishul Icon" className="-rotate-90 w-60 md:block hidden" />
+    <img src={trishul} alt="Trishul Icon" style={{visibility : "hidden"}} className="-rotate-90 w-60 md:block hidden" />
   
     {/* Second Circle */}
     <div className="relative flex justify-center items-center mt-40 md:mt-0">

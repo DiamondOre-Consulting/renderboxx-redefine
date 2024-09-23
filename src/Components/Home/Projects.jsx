@@ -6,7 +6,7 @@ import haridwarlogo from "../../assets/haridwarlogo.png";
 import trishul from "../../assets/trishul.png";
 import candolimluxfort from "../../assets/candolimluxfort.jpg";
 import project4appark from '../../assets/project4appark.jpg';
-import project5 from '../../assets/rishikesh.jpg';
+import project5 from '../../assets/rishikeshimg.jpg';
 import project6 from '../../assets/project6.jpg';
 import hardwargate from '../../assets/hridwargate.jpg'
 import project7 from '../../assets/ganges.jpg'
