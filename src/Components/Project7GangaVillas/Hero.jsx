@@ -13,7 +13,7 @@ const Hero = () => {
       }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-60 bg-black opacity-40  rounded-md z-10"></div>
+      <div className="absolute inset-40 bg-black opacity-40  rounded-md z-10"></div>
 
       {/* Hero Text */}
       <div className="absolute flex flex-col justify-center items-center text-center inset-0 text-white z-20">

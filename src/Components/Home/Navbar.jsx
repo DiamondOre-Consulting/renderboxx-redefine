@@ -169,7 +169,7 @@ const Navbar = () => {
 
 
                 <Link
-                  to={"/thefiveresort"}
+                  to={"/thefivestarresort"}
                 
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
