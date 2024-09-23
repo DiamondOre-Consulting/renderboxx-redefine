@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from "react";
-import f1 from "../../assets/f1.jpg";
+import f1 from "../../assets/haridwargallery/37.jpg";
 import f2 from "../../assets/f2.jpg";
-import f3 from "../../assets/f3.jpg";
-import f4 from "../../assets/f4.jpg";
+import f3 from "../../assets/haridwargallery/34.jpg";
+import f4 from "../../assets/haridwargallery/14.jpg";
 import f5 from "../../assets/f5.jpg";
-import f6 from "../../assets/f6.jpg";
+import f6 from "../../assets/haridwargallery/35.jpg";
 import f7 from "../../assets/f7.jpg";
 import f8 from "../../assets/f8.jpg";
-import f9 from "../../assets/f9.jpg";
-import f10 from "../../assets/f10.jpg";
-import f11 from "../../assets/f11.jpg";
-import f12 from "../../assets/f12.jpg";
-import f13 from "../../assets/f13.jpg";
+import f9 from "../../assets/gd7.jpg";
+import f10 from "../../assets/haridwargallery/34.jpg";
+import f11 from "../../assets/haridwargallery/17.jpg";
+import f12 from "../../assets/haridwargallery/23.jpg";
+import f13 from "../../assets/haridwargallery/31.jpg";
 import f14 from "../../assets/f14.jpg";
 import f15 from "../../assets/f15.jpg";
 import f16 from "../../assets/f16.jpg";
-import f17 from "../../assets/f17.jpg";
+import f17 from "../../assets/haridwargallery/17.jpg";
 import trishul from '../../assets/trishul.png'
+import wideroads from '../../assets/haridwargallery/36.jpg'
+import park from '../../assets/haridwargallery/8.jpg'
+import garden from '../../assets/haridwargallery/g1.jpeg'
 
 // Array of feature objects
 const features1 = [
   { image: f1, description: "24 x 7 Security through CCTV Camera" },
-  { image: f2, description: "Wide Roads" },
+  { image: wideroads, description: "Wide Roads" },
   { image: f3, description: "Water Fountain" },
   { image: f4, description: "Street Lights" },
   { image: f5, description: "Clearly demarked plots" },
   { image: f6, description: "Farm Houses" },
   { image: f7, description: "Swimming Pool" },
-  { image: f17, description: "Neaboure" },
+  { image: f17, description: "Neighbour" },
  
 ];
 
@@ -37,8 +40,8 @@ const features2 = [
   { image: f11, description: "Yoga Hall" },
   { image: f12, description: "Meditation Centre" },
   { image: f13, description: "Multipurpose Hall" },
-  { image: f14, description: "Central Park with Kids Play Area" },
-  { image: f15, description: "Lots of open spaces and greenery" },
+  { image: park, description: "Central Park with Kids Play Area" },
+  { image: garden, description: "Lots of open spaces and greenery" },
   { image: f16, description: "Temple" },
  
 ];
