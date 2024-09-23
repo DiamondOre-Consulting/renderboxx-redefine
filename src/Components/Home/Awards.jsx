@@ -22,7 +22,7 @@ const awards = [
 
   {
     image: ShilpaAward,
-    description: "IFastest Growing Real Estate Company in India Residential Project",
+    description: "Fastest Growing Real Estate Company in India Residential Project",
   },
 
   {

@@ -85,7 +85,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit} `}
+                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit}  `}
                 />
                 {/* Overlay with hover effect */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
