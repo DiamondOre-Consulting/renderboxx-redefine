@@ -6,6 +6,7 @@ import trishul from "../../assets/trishul.png";
 import chatboat from "../../assets/chatboat.png";
 import emailjs from "emailjs-com";
 import ChatBoat from "./ChatBoat";
+import contactus from '../../assets/contactus.png'
 
 
 const ContactUsPage = () => {
@@ -89,15 +90,18 @@ const ContactUsPage = () => {
         <div
           className="relative w-full h-[70vh] md:h-[80vh] bg-gray-900"
           style={{
-            backgroundImage: `url(${aarti})`,
+            backgroundImage: `url(${contactus})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
+            backgroundClip: "border-box",
+            backgroundOrigin:"content-box"
           }}
         >
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
             <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center headings">
               Contact Us
             </h1>
+            <p className="text-gray-100 text-md md:text-2xl mt-4">We’re here to help you build your dream. Reach out to us today!</p>
             {/* <img
               src={trishul}
               alt="Trishul Icon"
