@@ -34,23 +34,25 @@ import sd16 from "../../assets/haridwargallery/28.jpg";
 import sd17 from "../../assets/haridwargallery/29.jpg";
 import sd18 from "../../assets/haridwargallery/30.jpg";
 import sd19 from "../../assets/haridwargallery/31.jpg";
-import gd1 from "../../assets/haridwargallery/32.jpg";
-import gd2 from "../../assets/haridwargallery/33.jpg";
-import gd3 from "../../assets/haridwargallery/34.jpg";
-import gd4 from "../../assets/haridwargallery/35.jpg";
-import gd5 from "../../assets/haridwargallery/36.jpg";
-import gd6 from "../../assets/haridwargallery/37.jpg";
-import gd7 from "../../assets/haridwargallery/38.jpg";
-import gd8 from "../../assets/haridwargallery/39.jpg";
-import gd9 from "../../assets/haridwargallery/40.jpg";
+import gd11 from "../../assets/haridwargallery/32.jpg";
+import gd12 from "../../assets/haridwargallery/33.jpg";
+import gd13 from "../../assets/haridwargallery/34.jpg";
+import gd14 from "../../assets/haridwargallery/35.jpg";
+import gd15 from "../../assets/haridwargallery/36.jpg";
+import gd16 from "../../assets/haridwargallery/37.jpg";
+import gd17 from "../../assets/haridwargallery/38.jpg";
+import gd18 from "../../assets/haridwargallery/39.jpg";
+import gd19 from "../../assets/haridwargallery/40.jpg";
+import hardwargate from '../../assets/hridwargate.jpg'
 
 // Main Image Carousel Data
 const carouselImages = [
+  { src: hardwargate, alt: "GATE" },
   { src: g1, alt: "GATE" },
   { src: g2, alt: "Club House" },
   { src: g3, alt: "Swimming Pool" },
   { src: g4, alt: "Kids Play Ground" },
-  { src: g5, alt: "Central Park Anandvan" },
+  // { src: g5, alt: "Central Park Anandvan" },
   { src: g6, alt: "Design your own house" },
   { src: g7, alt: "Wide Roads" },
   { src: g8, alt: "Plot of 100 Sqr Yards" },
@@ -64,7 +66,7 @@ const carouselImages = [
   { src: sd4, alt: "Image 16" },
   { src: sd5, alt: "Image 17" },
   { src: sd6, alt: "Image 18" },
-  { src: sd7, alt: "Image 19" },
+  // { src: sd7, alt: "Image 19" },
   { src: sd8, alt: "Image 20" },
   { src: sd9, alt: "Image 21" },
   { src: sd10, alt: "Image 22" },
@@ -73,19 +75,19 @@ const carouselImages = [
   { src: sd13, alt: "Image 25" },
   { src: sd14, alt: "Image 26" },
   { src: sd15, alt: "Image 27" },
-  { src: sd16, alt: "Image 28" },
-  { src: sd17, alt: "Image 29" },
-  { src: sd18, alt: "Image 30" },
+  // { src: sd16, alt: "Image 28" },
+  // { src: sd17, alt: "Image 29" },
+  // { src: sd18, alt: "Image 30" },
   { src: sd19, alt: "Image 31" },
-  { src: gd1, alt: "Image 32" },
-  { src: gd2, alt: "Image 33" },
-  { src: gd3, alt: "Image 34" },
-  { src: gd4, alt: "Image 35" },
-  { src: gd5, alt: "Image 36" },
-  { src: gd6, alt: "Image 37" },
-  { src: gd7, alt: "Image 38" },
-  { src: gd8, alt: "Image 39" },
-  { src: gd9, alt: "Image 40" }
+  { src: gd11, alt: "Image 32" },
+  // { src: gd2, alt: "Image 33" },
+  { src: gd13, alt: "Image 34" },
+  { src: gd14, alt: "Image 35" },
+  { src: gd15, alt: "Image 36" },
+  { src: gd16, alt: "Image 37" },
+  { src: gd17, alt: "Image 38" },
+  { src: gd18, alt: "Image 39" },
+  { src: gd19, alt: "Image 40" }
 ];
 
 const Gallery = () => {

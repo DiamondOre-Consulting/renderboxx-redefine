@@ -35,7 +35,6 @@ const awards = [
     image: UKcm,
     description: "Gaurav Uttarakhand Award by the Chief Minister for the Most Promising Township of Uttarakhand",
   },
- 
   {
     image: balkishan,
     description: "Reward and Recognition Through Mr. Balkishan",

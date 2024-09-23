@@ -1,6 +1,7 @@
 import React from "react";
 import project5 from '../../assets/project6.jpg';
 import { Link } from "react-router-dom";
+import fivestar from '../../assets/fivestar.jpg'
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       className="relative w-full h-screen bg-cover bg-center"
       id="home"
       style={{
-        backgroundImage: `url(${project5})`,
+        backgroundImage: `url(${fivestar})`,
       }}
     >
       {/* Dark overlay */}

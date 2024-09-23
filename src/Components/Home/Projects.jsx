@@ -11,6 +11,8 @@ import project6 from '../../assets/project6.jpg';
 import hardwargate from '../../assets/hridwargate.jpg'
 import project7 from '../../assets/ganges.jpg'
 import ganga from '../../assets/ganga1.jpg'
+import rishikesh from '../../assets/rishikesh.jpeg'
+import fivestar from '../../assets/fivestar.jpg'
 
 // Sample project data with image fitting style
 const projects = [
@@ -43,13 +45,13 @@ const upcomingProjects = [
   },
   {
     title: "Rishikesh Paradise",
-    image: project5,
+    image: rishikesh,
     link: "/rishikeshparadise",
     fit: "cover", // Image fit style
   },
   {
     title: "The Five Star Resort With Leading Brand",
-    image: project6,
+    image: fivestar,
     link: "thefivestarresort",
     fit: "cover", // Image fit style
   },

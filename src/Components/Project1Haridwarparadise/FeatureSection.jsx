@@ -1,25 +1,26 @@
 import React, { useEffect, useState } from "react";
-import f1 from "../../assets/haridwargallery/37.jpg";
+import f1 from "../../assets/f1.jpg";
 import f2 from "../../assets/f2.jpg";
-import f3 from "../../assets/haridwargallery/34.jpg";
+import f3 from "../../assets/f3.jpg";
 import f4 from "../../assets/haridwargallery/14.jpg";
 import f5 from "../../assets/f5.jpg";
 import f6 from "../../assets/haridwargallery/35.jpg";
 import f7 from "../../assets/f7.jpg";
 import f8 from "../../assets/f8.jpg";
-import f9 from "../../assets/gd7.jpg";
-import f10 from "../../assets/haridwargallery/34.jpg";
-import f11 from "../../assets/haridwargallery/17.jpg";
+import f9 from "../../assets/f9.jpg";
+import f10 from "../../assets/f10.jpg";
+import f11 from "../../assets/f11.jpg";
 import f12 from "../../assets/haridwargallery/23.jpg";
 import f13 from "../../assets/haridwargallery/31.jpg";
 import f14 from "../../assets/f14.jpg";
 import f15 from "../../assets/f15.jpg";
 import f16 from "../../assets/f16.jpg";
-import f17 from "../../assets/haridwargallery/17.jpg";
+import f17 from "../../assets/f17.jpg";
 import trishul from '../../assets/trishul.png'
 import wideroads from '../../assets/haridwargallery/36.jpg'
 import park from '../../assets/haridwargallery/8.jpg'
 import garden from '../../assets/haridwargallery/g1.jpeg'
+import hardwargate from '../../assets/hridwargate.jpg'
 
 // Array of feature objects
 const features1 = [
@@ -28,7 +29,7 @@ const features1 = [
   { image: f3, description: "Water Fountain" },
   { image: f4, description: "Street Lights" },
   { image: f5, description: "Clearly demarked plots" },
-  { image: f6, description: "Farm Houses" },
+  { image: hardwargate, description: "Farm Houses" },
   { image: f7, description: "Swimming Pool" },
   { image: f17, description: "Neighbour" },
  
@@ -123,7 +124,7 @@ const FeatureSection = () => {
   
     {/* Second Circle */}
     <div className="relative flex justify-center items-center mt-40 md:mt-0">
-      <div className="absolute z-20 text-2xl md:text-4xl font-bold headingp1">Features</div>
+      <div className="absolute z-20 text-2xl md:text-4xl font-bold headingp1">Amenities</div>
       <div
         className="relative group"
         style={{ width: `${circleRadius * 2}px`, height: `${circleRadius * 2}px` }}
