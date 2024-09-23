@@ -19,7 +19,7 @@ const Hero = () => {
           className="text-3xl md:text-4xl font-bold lg:text-7xl mb-4 headingp1 blink-text"
           style={{ textShadow: "3px 4px 7px 4px white", letterSpacing: '30px' }}
         >
-          Coming Soon..
+          Coming Soon...
         </h1>
 
         {/* Centered "Rishikesh Paradise" below "Coming Soon" */}
