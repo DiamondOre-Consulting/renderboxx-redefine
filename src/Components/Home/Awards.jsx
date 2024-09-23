@@ -28,18 +28,17 @@ const awards = [
   {
     image: mahimachadhary,
     description:
-      "Fastest Growing Real Estate Company in India Residential Project",
+      "Reward and Recognition Through Bollywood Actress Mahima Chaudhry",
   },
 
   {
     image: UKcm,
-    description: "Excellence Award for Most Promising Product in Real Estate",
+    description: "Gaurav Uttarakhand Award by the Chief Minister for the Most Promising Township of Uttarakhand",
   },
  
-
   {
     image: balkishan,
-    description: "Excellence Award for Most Promising Product in Real Estate.",
+    description: "Reward and Recognition Through Mr. Balkishan",
   },
 ];
 
