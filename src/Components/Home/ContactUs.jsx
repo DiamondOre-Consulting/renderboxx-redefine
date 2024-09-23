@@ -24,7 +24,7 @@ const ContactUs = () => {
               to={"/contactus"}
               className="mt-6 px-8 py-2  bg-primary text-lg font-semibold uppercase"
             >
-              contactus
+              contact us
             </Link>
           </div>
         </div>
