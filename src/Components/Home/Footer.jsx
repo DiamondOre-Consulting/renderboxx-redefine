@@ -31,6 +31,14 @@ const Footer = () => {
               spaces with innovative ideas, delivering projects across Delhi,
               NCR, Uttarakhand.
             </p>
+
+            <div className="mt-6 md:mt-5 flex justify-start">
+          <Link to={'/contactus'}>
+            <span className="bg-black rounded-md px-6 py-2 text-gray-100 hover:bg-gray-800">
+              Request a CallBack
+            </span>
+          </Link>
+        </div>
           </div>
 
           {/* Contact Information */}
@@ -146,13 +154,7 @@ const Footer = () => {
         </div>
 
         {/* Call to Action Button */}
-        <div className="mt-6 md:mt-5 flex justify-center">
-          <Link to={'/contactus'}>
-            <span className="bg-black rounded-md px-6 py-2 text-gray-100 hover:bg-gray-800">
-              Request a CallBack
-            </span>
-          </Link>
-        </div>
+    
       </div>
     </footer>
   );

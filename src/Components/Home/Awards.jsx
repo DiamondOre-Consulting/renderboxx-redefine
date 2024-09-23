@@ -4,9 +4,11 @@ import trishul from "../../assets/trishul.png";
 import ajayjadeja from "../../assets/Awards/ajay jadeja.jpg";
 import mahimachadhary from "../../assets/Awards/Mahima Chaudhary.jpg";
 import ShilpaAward from "../../assets/Awards/Shilpa Award.jpg";
-import UKcm from "../../assets/Awards/UK CM Award.jpeg";
+import UKcm from "../../assets/Awards/UKCM2.jpg";
 import susmita from "../../assets/Awards/Susmita award.jpg";
 import balkishan from "../../assets/Awards/balkishan.jpeg";
+
+
 const awards = [
   {
     image: ajayjadeja,
@@ -14,23 +16,26 @@ const awards = [
       "International Quality Award for Excellence in Designing Residential Project",
   },
   {
+    image: susmita,
+    description: "Excellence Award for Most Promising Product in Real Estate",
+  },
+
+  {
+    image: ShilpaAward,
+    description: "IFastest Growing Real Estate Company in India Residential Project",
+  },
+
+  {
     image: mahimachadhary,
     description:
       "Fastest Growing Real Estate Company in India Residential Project",
   },
-  {
-    image: ShilpaAward,
-    description: "Excellence Award for Most Promising Product in Real Estate.",
-  },
 
   {
     image: UKcm,
-    description: "Excellence Award for Most Promising Product in Real Estate.",
+    description: "Excellence Award for Most Promising Product in Real Estate",
   },
-  {
-    image: susmita,
-    description: "Excellence Award for Most Promising Product in Real Estate.",
-  },
+ 
 
   {
     image: balkishan,

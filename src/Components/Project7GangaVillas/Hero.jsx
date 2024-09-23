@@ -1,12 +1,12 @@
 import React from "react";
-import project7 from '../../assets/ganges.jpg';
+import project7 from '../../assets/ganga1.jpg';
 import { Link } from "react-router-dom";
 
 
 const Hero = () => {
   return (
     <div
-      className="relative w-full h-screen bg-cover bg-center"
+      className="relative w-full h-screen bg-cover bg-bottom"
       id="home"
       style={{
         backgroundImage: `url(${project7})`,

@@ -10,6 +10,7 @@ import project5 from '../../assets/rishikesh.jpg';
 import project6 from '../../assets/project6.jpg';
 import hardwargate from '../../assets/hridwargate.jpg'
 import project7 from '../../assets/ganges.jpg'
+import ganga from '../../assets/ganga1.jpg'
 
 // Sample project data with image fitting style
 const projects = [
@@ -56,7 +57,7 @@ const upcomingProjects = [
 
   {
     title: "Ganges Villas",
-    image: project7,
+    image: ganga,
     link: "/gangavillas",
     fit: "cover", // Image fit style
   },
