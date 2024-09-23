@@ -137,13 +137,7 @@ const Navbar = () => {
                 >
                   Haridwar Paradise
                 </Link>
-                <Link
-                  to={"/devprayagparadise"}
               
-                  className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
-                >
-                  Devprayag Paradise
-                </Link>
 
                 <Link
                   to={"/Candolimlaxfort"}
@@ -158,6 +152,14 @@ const Navbar = () => {
                   className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
                 >
                   AP Park Avenue
+                </Link>
+
+                <Link
+                  to={"/devprayagparadise"}
+              
+                  className="block px-4 py-2 text-gray-100 hover:bg-gray-700 hover:text-primary transition-all duration-200"
+                >
+                  Devprayag Paradise
                 </Link>
                 <Link
                   to={"/rishikeshparadise"}
