@@ -5,14 +5,14 @@ import devprayaglogo from "../../assets/devprayaglogo.png";
 import haridwarlogo from "../../assets/haridwarlogo.png";
 import trishul from "../../assets/trishul.png";
 import candolimluxfort from "../../assets/candolimluxfort.jpg";
-import project4appark from '../../assets/project4appark.jpg';
-import project5 from '../../assets/rishikeshimg.jpg';
-import project6 from '../../assets/project6.jpg';
-import hardwargate from '../../assets/hridwargate.jpg'
-import project7 from '../../assets/ganges.jpg'
-import ganga from '../../assets/ganga1.jpg'
-import rishikesh from '../../assets/rishikesh.jpeg'
-import fivestar from '../../assets/fivestar.jpg'
+import project4appark from "../../assets/project4appark.jpg";
+import project5 from "../../assets/rishikeshimg.jpg";
+import project6 from "../../assets/project6.jpg";
+import hardwargate from "../../assets/hridwargate.jpg";
+import project7 from "../../assets/ganges.jpg";
+import ganga from "../../assets/ganga1.jpg";
+import rishikesh from "../../assets/rishikesh.jpeg";
+import fivestar from "../../assets/fivestar.jpg";
 
 // Sample project data with image fitting style
 const projects = [
@@ -55,8 +55,6 @@ const upcomingProjects = [
     link: "thefivestarresort",
     fit: "cover", // Image fit style
   },
-
-
   {
     title: "Ganges Villas",
     image: ganga,
@@ -74,8 +72,7 @@ const Projects = () => {
           <h1 className="text-5xl md:text-7xl font-semibold text-center headings">
             Our Projects
           </h1>
-          {/* <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" /> */}
-          <div className='w-60 h-1 mx-auto bg-black mt-2'></div>
+          <div className="w-60 h-1 mx-auto bg-black mt-2"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 mx-10">
@@ -87,18 +84,27 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit}  `}
+                  className={`w-full h-full transition-transform duration-500 bg-black group-hover:scale-105 object-${project.fit}`}
                 />
+
+                {/* Bottom strip with text */}
+                {/* Bottom strip with text */}
+                <Link
+                  to={project.link}
+                  className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white z-20 text-center py-2 cursor-pointer transition-all duration-500 group-hover:h-16 h-10"
+                >
+                  Click Here
+                </Link>
+
                 {/* Overlay with hover effect */}
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                {/* <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <Link
                     to={project.link}
-                     
                     className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
                   >
                     Visit Project
                   </Link>
-                </div>
+                </div> */}
               </div>
               {/* Project Title */}
               <div className="py-4">
@@ -121,8 +127,7 @@ const Projects = () => {
           <h1 className="text-5xl md:text-7xl font-semibold text-center headings">
             Upcoming Projects
           </h1>
-          {/* <img src={trishul} alt="Separator" className="w-60 md:px-0 px-10" /> */}
-          <div className='w-60 h-1 mx-auto bg-black mt-2'></div>
+          <div className="w-60 h-1 mx-auto bg-black mt-2"></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 mx-10">
@@ -136,16 +141,23 @@ const Projects = () => {
                   alt={project.title}
                   className={`w-full h-full transition-transform bg-black duration-500 group-hover:scale-105 object-${project.fit}`}
                 />
+                {/* Bottom strip with text */}
+                <Link
+                  to={project.link}
+                  className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white z-20 text-center py-2 cursor-pointer transition-all duration-500 group-hover:h-16 h-10"
+                >
+                  Click Here
+                </Link>
+
                 {/* Overlay with hover effect */}
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                {/* <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <Link
                     to={project.link}
-                     
                     className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300"
                   >
                     Visit Project
                   </Link>
-                </div>
+                </div> */}
               </div>
               {/* Project Title */}
               <div className="py-4">
