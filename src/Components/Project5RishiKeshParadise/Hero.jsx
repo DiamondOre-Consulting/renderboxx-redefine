@@ -26,6 +26,7 @@ const Hero = () => {
         <h2 className="text-lg headingp1 md:text-2xl lg:text-4xl font-semibold mt-4">
           Rishikesh Paradise
         </h2>
+        <p className="text-2xl md:text-4xl headingp1 mt-3">Upcoming township on National Highway</p>
       </div>
 
       {/* Blinking text animation */}

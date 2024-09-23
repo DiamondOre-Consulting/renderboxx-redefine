@@ -16,10 +16,7 @@ const HomeMain = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleWhatsAppChat = () => {
-    const url = `https://api.whatsapp.com/send?phone= 9582000035`;
-    window.open(url, "_blank");
-  };
+
 
   return (
     <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import aarti from '../../assets/aarti.jpg'
+import aarti from '../../assets/contactusimg2.png'
 
 const ContactUs = () => {
   return (
@@ -10,7 +10,7 @@ const ContactUs = () => {
           <img
             src={aarti}
             alt="About Us"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover position-bottom "
           />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center mt-12">

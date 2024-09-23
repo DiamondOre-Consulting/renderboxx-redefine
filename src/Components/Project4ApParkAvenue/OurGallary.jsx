@@ -12,7 +12,7 @@ import p4img10 from '../../assets/p4img10.jpg';
 // import candolimluxfort from "../../assets/candolimluxfort.jpg"
 
 const OurGallary = () => {
-  const images = [p3img1, p4img4 , p4img7, p4img5 , p4img6  , p4img8  ];
+  const images = [ p4img4 , p4img7, p4img5 , p4img6  ];
 
   return (
     <div className="py-10 px-6 bg-white grid grid-cols-1 md:grid-cols-2 gap-6">

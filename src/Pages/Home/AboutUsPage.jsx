@@ -5,11 +5,11 @@ import Footer from "../../Components/Home/Footer";
 import media1 from "../../assets/media1.png";
 import media2 from "../../assets/media2.png";
 import Navbar from "../../Components/Home/Navbar";
-import image from "../../assets/about.jpg";
+import image from "../../assets/aboutusimg.png";
 import trishul from "../../assets/trishul.png";
 import RedefineOwner from "../../assets/RedefineOwner.jpg";
 import mediafull from "../../assets/mediafull.jpg";
-import ChatBoat from "./ChatBoat";
+import ChatBoat from "./ChatBoat";   
 
 const AboutUsPage = () => {
   useEffect(() => {
@@ -17,7 +17,7 @@ const AboutUsPage = () => {
   }, []);
 
   const handleWhatsAppChat = () => {
-    const url = `https://api.whatsapp.com/send?phone= 9582000035`;
+    const url = `https://api.whatsapp.com/send?phone=9582000035`;
     window.open(url, "_blank");
   };
 
@@ -29,8 +29,9 @@ const AboutUsPage = () => {
           <img
             src={image} // Replace with your image URL
             alt="About Us"
-            className="w-full h-full object-cover position-top"
-            style={{"objectPosition": "10% 0%"}}
+            className="w-full h-full object-fit position-bottom"
+            
+            style={{"objectPosition": "15% 100%"}}
           />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -50,7 +51,7 @@ const AboutUsPage = () => {
             <p className="text-lg p-4 md:p-8">
               <h1 className="headings text-4xl md:text-6xl">Company Profile</h1>
               <div className=" mb-6">
-              <div className="w-60 h-1 bg-black mt-2"></div>
+              <div className="w-80 h-1 bg-black mt-2"></div>
                 {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
               </div>
               <p className="text-xl text-justify">
@@ -79,7 +80,7 @@ const AboutUsPage = () => {
               Media Coverage
             </h1>
             <div className="mb-6">
-            <div className="w-60 h-1 bg-black mt-2"></div>
+            <div className="w-60 md:w-80 h-1 bg-black mt-2"></div>
               {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
             </div>
             <div className="flex md:flex justify-between md:px-20 md:block hidden">
@@ -108,7 +109,7 @@ const AboutUsPage = () => {
             </h1>
             <div className="mb-10">
               {/* <img src={trishul} alt="" className="w-80 md:px-0" /> */}
-              <div className="w-60 h-1 bg-black mt-2"></div>
+              <div className="w-60 md:w-80 h-1 bg-black mt-2"></div>
             </div>
             <div className="grid md:grid-cols-6 gap-8 items-center">
               <div className="col-span-4 text-justify text-xl text-gray-700">
@@ -123,7 +124,7 @@ const AboutUsPage = () => {
                   India.
                 </p>
                 <p>
-                Mr. Chander Mohan, born on May 27, 1984. he is the
+                Mr. Chander Mohan, born on May 27, 1984. He is the
                   visionary leader behind Redefine Group. With a B.Tech in
                   Electronics and Communications and a Higher National Diploma
                   in Electrical/Electronic Engineering from the U.K., he has
@@ -147,13 +148,10 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      <div
-        className="fixed md:bottom-2 bottom-1 md:right-4 right-2 z-10 cursor-pointer"
-        onClick={handleWhatsAppChat}
-      >
+   
      
      <ChatBoat/>
-      </div>
+     
     </>
   );
 };

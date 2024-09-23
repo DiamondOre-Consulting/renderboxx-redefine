@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import candolimluxfort from "../../assets/candolimluxfort.jpg"; // Background image
 import {
   FaUser,
@@ -97,6 +97,12 @@ const CareerForm = () => {
   const closeSuccessPopup = () => {
     setIsSuccess(false); // Close the modal when clicked
   };
+
+
+ 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <>
@@ -247,6 +253,7 @@ const CareerForm = () => {
         </div>
       </div>
       <Footer/>
+      <ChatBoat/>
     </>
   );
 };
