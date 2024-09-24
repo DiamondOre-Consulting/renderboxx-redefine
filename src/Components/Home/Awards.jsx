@@ -28,17 +28,14 @@ const awards = [
   {
     image: mahimachadhary,
     description:
-      "Reward and Recognition Through Bollywood Actress Mahima Chaudhry",
+      "Reward and Recognition Through Bollywood Actress Mahima Chaudhary",
   },
 
   {
     image: UKcm,
     description: "Gaurav Uttarakhand Award by the Chief Minister for the Most Promising Township of Uttarakhand",
   },
-  {
-    image: balkishan,
-    description: "Reward and Recognition Through Mr. Balkishan",
-  },
+
 ];
 
 const Awards = () => {

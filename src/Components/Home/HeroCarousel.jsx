@@ -4,7 +4,7 @@ import v1 from '../../assets/hero/6.mp4'
 import { Link } from "react-router-dom";
 
 const headings = [
-  "We Bulid Together",
+  "We Build Together",
   "Join Our Journey",
    "Experience Innovation"
   

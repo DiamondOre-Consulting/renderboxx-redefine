@@ -14,7 +14,7 @@ const About = () => {
             design, and amenities. It seamlessly blends contemporary living with
             spiritual tranquility. Surrounded by lush greenery, it provides easy
             access to major local sites, including the sacred Har Ki Paudi and
-            Patanjali Yogapeeth, just a short distance away. Haridwar Paradise
+            Patanjali Yogpeeth, just a short distance away. Haridwar Paradise
             ensures ultimate comfort and luxury with its gated complex, 2-tier
             security, and eco-friendly systems. Its state-of-the-art clubhouse
             and numerous amenities cater to relaxation and well-being. Haridwar

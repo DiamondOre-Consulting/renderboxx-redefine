@@ -18,7 +18,7 @@ const NearByTownShips = () => {
     },
     {
       image: nbt2,
-      description: "Patanjali Yogpeeth 1.4 Kms",
+      description: "Patanjali Yogpeeth 1.5 Kms",
     },
     {
       image: nbt3,
