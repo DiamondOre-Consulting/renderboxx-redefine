@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import haridwar from "../../assets/haridwar2.png";
-import devprayaglogo from "../../assets/devprayaglogo.png";
+import devprayaglogo from "../../assets/devprayag1.png";
 import haridwarlogo from "../../assets/haridwarlogo.png";
 import trishul from "../../assets/trishul.png";
 import candolimluxfort from "../../assets/candolimluxfort.jpg";
