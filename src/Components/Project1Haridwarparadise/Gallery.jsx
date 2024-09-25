@@ -44,6 +44,17 @@ import gd17 from "../../assets/haridwargallery/38.jpg";
 import gd18 from "../../assets/haridwargallery/39.jpg";
 import gd19 from "../../assets/haridwargallery/40.jpg";
 import hardwargate from '../../assets/hridwargate.jpg'
+import pool from '../../assets/pool.jpeg';
+import ni8 from '../../assets/haridwargallery/ni8.jpeg'
+import ni9 from '../../assets/haridwargallery/ni9.jpeg'
+import ni10 from '../../assets/haridwargallery/ni10.jpeg'
+import ni11 from '../../assets/haridwargallery/ni11.jpeg'
+import ni12 from '../../assets/haridwargallery/ni12.jpeg'
+import ni13 from '../../assets/haridwargallery/ni13.jpeg'
+import ni14 from '../../assets/haridwargallery/ni14.jpeg'
+import ni15 from '../../assets/haridwargallery/ni15.jpeg'
+import ni16 from '../../assets/haridwargallery/ni16.jpeg'
+import ni17 from '../../assets/haridwargallery/ni17.jpeg'
 
 // Main Image Carousel Data
 const carouselImages = [
@@ -52,12 +63,23 @@ const carouselImages = [
   { src: g2, alt: "Club House" },
   { src: g3, alt: "Swimming Pool" },
   { src: g4, alt: "Kids Play Ground" },
+  { src: ni8, alt: "Image 11" },
+  { src: ni9, alt: "Image 11" },
+  { src: ni10, alt: "Image 11" },
+  { src: ni11, alt: "Image 11" },
+  { src: ni12, alt: "Image 11" },
+  { src: ni13, alt: "Image 11" },
+  { src: ni14, alt: "Image 11" },
+  { src: ni14, alt: "Image 11" },
+  { src: ni15, alt: "Image 11" },
+  { src: ni16, alt: "Image 11" },
+  { src: ni17, alt: "Image 11" },
   // { src: g5, alt: "Central Park Anandvan" },
   { src: g6, alt: "Design your own house" },
   { src: g7, alt: "Wide Roads" },
   { src: g8, alt: "Plot of 100 Sqr Yards" },
   { src: g9, alt: "Farm House" },
-  { src: g10, alt: "Clearly Denmarked Plots" },
+  // { src: g10, alt: "Clearly Denmarked Plots" },
   { src: g11, alt: "Image 11" },
   { src: g12, alt: "Image 12" },
   { src: sd1, alt: "Image 13" },
@@ -74,7 +96,8 @@ const carouselImages = [
   { src: sd12, alt: "Image 24" },
   { src: sd13, alt: "Image 25" },
   { src: sd14, alt: "Image 26" },
-  { src: sd15, alt: "Image 27" },
+  
+  { src: pool, alt: "Image 27" },
   // { src: sd16, alt: "Image 28" },
   // { src: sd17, alt: "Image 29" },
   // { src: sd18, alt: "Image 30" },
