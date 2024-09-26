@@ -55,6 +55,15 @@ import ni14 from '../../assets/haridwargallery/ni14.jpeg'
 import ni15 from '../../assets/haridwargallery/ni15.jpeg'
 import ni16 from '../../assets/haridwargallery/ni16.jpeg'
 import ni17 from '../../assets/haridwargallery/ni17.jpeg'
+import ni30 from '../../assets/haridwargallery/ni38.jpeg';
+import ni31 from '../../assets/haridwargallery/ni31.jpeg';
+import ni32 from '../../assets/haridwargallery/ni32.jpeg';
+import ni33 from '../../assets/haridwargallery/ni33.jpeg';
+import ni34 from '../../assets/haridwargallery/ni34.jpeg';
+import ni35 from '../../assets/haridwargallery/ni35.jpeg';
+import ni36 from '../../assets/haridwargallery/ni36.jpeg';
+import ni37 from '../../assets/haridwargallery/ni37.jpeg';
+
 
 // Main Image Carousel Data
 const carouselImages = [
@@ -63,6 +72,14 @@ const carouselImages = [
   { src: g2, alt: "Club House" },
   { src: g3, alt: "Swimming Pool" },
   { src: g4, alt: "Kids Play Ground" },
+  { src: ni30, alt: "Image 41" },
+  { src: ni31, alt: "Image 42" },
+  { src: ni32, alt: "Image 43" },
+  { src: ni33, alt: "Image 44" },
+  { src: ni34, alt: "Image 45" },
+  { src: ni35, alt: "Image 46" },
+  { src: ni36, alt: "Image 47" },
+  { src: ni37, alt: "Image 48" },
   { src: ni8, alt: "Image 11" },
   { src: ni9, alt: "Image 11" },
   { src: ni10, alt: "Image 11" },
@@ -110,7 +127,8 @@ const carouselImages = [
   { src: gd16, alt: "Image 37" },
   { src: gd17, alt: "Image 38" },
   { src: gd18, alt: "Image 39" },
-  { src: gd19, alt: "Image 40" }
+  { src: gd19, alt: "Image 40" },
+
 ];
 
 const Gallery = () => {

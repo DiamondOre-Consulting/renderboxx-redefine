@@ -21,14 +21,15 @@ import wideroads from '../../assets/haridwargallery/4.jpg'
 import park from '../../assets/ni2.jpeg'
 import garden from '../../assets/haridwargallery/g1.jpeg'
 import hardwargate from '../../assets/hridwargate.jpg'
-
+import ni30 from '../../assets/haridwargallery/ni38.jpeg';
+import ni36 from '../../assets/haridwargallery/ni36.jpeg';
 // Array of feature objects
 const features1 = [
   { image: f1, description: "24 x 7 Security through CCTV Camera" },
-  { image: wideroads, description: "Wide Roads" },
+  { image: ni30 },
   { image: f3, description: "Water Fountain" },
   { image: f4, description: "Street Lights" },
-  { image: f5, description: "Clearly demarked plots" },
+  { image: ni36, description: "Clearly demarked plots" },
   { image: hardwargate, description: "Farm Houses" },
   { image: f7, description: "Swimming Pool" },
   { image: f17, description: "Neighbour" },
