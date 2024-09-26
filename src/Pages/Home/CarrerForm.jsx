@@ -65,7 +65,7 @@ const CareerForm = () => {
     if (Object.keys(validationErrors).length === 0) {
       // Send the form data via emailjs
       emailjs
-        .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
+        .send("service_7k8qn4q", "template_1212ofg", formData, "E0pH1PYatztI0_QKs")
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);

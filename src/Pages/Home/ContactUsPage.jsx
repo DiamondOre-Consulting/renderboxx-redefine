@@ -56,10 +56,10 @@ const ContactUsPage = () => {
     if (validateForm()) {
       emailjs
         .send(
-          "YOUR_SERVICE_ID", // replace with EmailJS service ID
-          "YOUR_TEMPLATE_ID", // replace with EmailJS template ID
+          "service_7k8qn4q", // replace with EmailJS service ID
+          "template_2cdcgj9", // replace with EmailJS template ID
           formData,
-          "YOUR_USER_ID" // replace with EmailJS user ID
+          "E0pH1PYatztI0_QKs" // replace with EmailJS user ID
         )
         .then(
           (response) => {
