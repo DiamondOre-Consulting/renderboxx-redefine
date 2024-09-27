@@ -1,5 +1,5 @@
 import React from "react";
-import project7 from "../../assets/ganga1.jpg";
+import project7 from "../../assets/gangavillas.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

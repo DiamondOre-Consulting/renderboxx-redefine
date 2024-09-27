@@ -10,7 +10,7 @@ import project5 from "../../assets/rishikeshimg.jpg";
 import project6 from "../../assets/project6.jpg";
 import hardwargate from "../../assets/hridwargate.jpg";
 import project7 from "../../assets/ganges.jpg";
-import ganga from "../../assets/ganga1.jpg";
+import ganga from "../../assets/gangavillas.jpg";
 import rishikesh from "../../assets/rishikesh.jpeg";
 import fivestar from "../../assets/fivestar.jpg";
 

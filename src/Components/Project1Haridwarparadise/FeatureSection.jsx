@@ -23,6 +23,8 @@ import garden from '../../assets/haridwargallery/g1.jpeg'
 import hardwargate from '../../assets/hridwargate.jpg'
 import ni30 from '../../assets/haridwargallery/ni38.jpeg';
 import ni36 from '../../assets/haridwargallery/ni36.jpeg';
+import mph from '../../assets/haridwargallery/mph.jpeg';
+
 // Array of feature objects
 const features1 = [
   { image: f1, description: "24 x 7 Security through CCTV Camera" },
@@ -41,7 +43,7 @@ const features2 = [
   { image: f10, description: "Spa and Gymnasium" },
   { image: f11, description: "Yoga Hall" },
   { image: f12, description: "Meditation Centre" },
-  { image: f13, description: "Multipurpose Hall" },
+  { image: mph, description: "Multipurpose Hall" },
   { image: park, description: "Central Park with Kids Play Area" },
   { image: garden, description: "Lots of open spaces and greenery" },
   { image: f16, description: "Temple" },
