@@ -140,7 +140,7 @@ const Gallery = () => {
   return (
     <div className="py-16">
       <div className="container mx-auto px-6">
-        <h1 className="text-center text-5xl mb-4">Our Gallery</h1>
+        <h1 className="text-center text-5xl mb-4">Haridwar Paradise Gallery</h1>
 
         {/* React Gallery Carousel */}
         <div className="relative mb-8 mx-auto">
