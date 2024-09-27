@@ -28,11 +28,11 @@ import mph from '../../assets/haridwargallery/mph.jpeg';
 // Array of feature objects
 const features1 = [
   { image: f1, description: "24 x 7 Security through CCTV Camera" },
-  { image: ni30 },
+  { image: ni30 , description: "Club house indoor area"},
   { image: f3, description: "Water Fountain" },
-  { image: f4, description: "Street Lights" },
-  { image: ni36, description: "Clearly demarked plots" },
-  { image: hardwargate, description: "Farm Houses" },
+  { image: f4, description: "Children Park" },
+  { image: ni36, description: "Cottages" },
+  { image: hardwargate, description: "Main Entrance of Township" },
   { image: f7, description: "Swimming Pool" },
   { image: f17, description: "Neighbour" },
  
@@ -42,7 +42,7 @@ const features2 = [
   { image: f9, description: "Indoor Games" },
   { image: f10, description: "Spa and Gymnasium" },
   { image: f11, description: "Yoga Hall" },
-  { image: f12, description: "Meditation Centre" },
+  { image: f12, description: "Park" },
   { image: mph, description: "Multipurpose Hall" },
   { image: park, description: "Central Park with Kids Play Area" },
   { image: garden, description: "Lots of open spaces and greenery" },
