@@ -122,7 +122,7 @@ const carouselImages = [
   { src: gd11, alt: "Image 32" },
   // { src: gd2, alt: "Image 33" },
   { src: gd13, alt: "Image 34" },
-  { src: gd14, alt: "Image 35" },
+  // { src: gd14, alt: "Image 35" },
   { src: gd15, alt: "Image 36" },
   { src: gd16, alt: "Image 37" },
   { src: gd17, alt: "Image 38" },
