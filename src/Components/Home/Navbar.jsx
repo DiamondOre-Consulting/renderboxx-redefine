@@ -204,7 +204,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to={"/carrer"}
+            to={"/career"}
             className="text-gray-100 hover:text-primary transition-colors"
           >
             Career
@@ -302,7 +302,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to={"/carrer"}
+            to={"/career"}
             className="block px-4 py-2 text-gray-100 hover:bg-gray-700"
             onClick={() => setShowMenu(false)}
           >

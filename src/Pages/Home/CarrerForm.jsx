@@ -7,7 +7,8 @@ import {
   FaMapMarkerAlt,
   FaBriefcase,
   FaDollarSign,
-} from "react-icons/fa";
+  FaGraduationCap,
+} from "react-icons/fa"; // Icons
 import Navbar from "../../Components/Home/Navbar";
 import Footer from "../../Components/Home/Footer";
 import emailjs from "emailjs-com"; // EmailJS for sending emails
@@ -46,6 +47,7 @@ const CareerForm = () => {
       errors.currentDesignation = "Current designation is required";
     if (!formData.currentCTC) errors.currentCTC = "Current CTC is required";
     if (!formData.expectedCTC) errors.expectedCTC = "Expected CTC is required";
+    if (!formData.experience) errors.experience = "Experience is required";
 
     return errors;
   };
@@ -65,7 +67,12 @@ const CareerForm = () => {
     if (Object.keys(validationErrors).length === 0) {
       // Send the form data via emailjs
       emailjs
-        .send("service_7k8qn4q", "template_1212ofg", formData, "E0pH1PYatztI0_QKs")
+        .send(
+          "service_7k8qn4q", // Service ID
+          "template_1212ofg", // Template ID
+          formData,
+          "E0pH1PYatztI0_QKs" // Public key
+        )
         .then(
           (response) => {
             console.log("SUCCESS!", response.status, response.text);
@@ -98,16 +105,13 @@ const CareerForm = () => {
     setIsSuccess(false); // Close the modal when clicked
   };
 
-
- 
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
       <Navbar />
-
       <div
         className="relative bg-cover bg-center min-h-screen flex items-center justify-center"
         style={{
@@ -121,7 +125,10 @@ const CareerForm = () => {
             Career Application Form
           </h1>
 
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2"
+          >
             <div className="flex items-center border-b border-gray-500">
               <FaUser className="text-gray-300 mr-3" />
               <input
@@ -134,7 +141,9 @@ const CareerForm = () => {
                 required
               />
             </div>
-            {errors.fullName && <p className="text-red-500">{errors.fullName}</p>}
+            {errors.fullName && (
+              <p className="text-red-500">{errors.fullName}</p>
+            )}
 
             <div className="flex items-center border-b border-gray-500">
               <FaEnvelope className="text-gray-300 mr-3" />
@@ -176,7 +185,35 @@ const CareerForm = () => {
               />
             </div>
 
-            <div className="flex items-center border-b border-gray-500 col-span-1 sm:col-span-2">
+            <div className="flex items-center border-b border-gray-500">
+              <FaGraduationCap className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="education"
+                value={formData.education}
+                onChange={handleInputChange}
+                placeholder="Education"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+              />
+            </div>
+
+            <div className="flex items-center border-b border-gray-500">
+              <FaBriefcase className="text-gray-300 mr-3" />
+              <input
+                type="text"
+                name="experience"
+                value={formData.experience}
+                onChange={handleInputChange}
+                placeholder="Experience (in years)"
+                className="w-full px-4 py-2 bg-transparent text-white border-none focus:outline-none placeholder-gray-400"
+                required
+              />
+            </div>
+            {errors.experience && (
+              <p className="text-red-500">{errors.experience}</p>
+            )}
+
+            <div className="flex items-center border-b border-gray-500">
               <FaBriefcase className="text-gray-300 mr-3" />
               <input
                 type="text"
@@ -189,7 +226,9 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentCompany && (
-              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentCompany}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">
+                {errors.currentCompany}
+              </p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -205,7 +244,9 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentDesignation && (
-              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentDesignation}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">
+                {errors.currentDesignation}
+              </p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -221,7 +262,9 @@ const CareerForm = () => {
               />
             </div>
             {errors.currentCTC && (
-              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.currentCTC}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">
+                {errors.currentCTC}
+              </p>
             )}
 
             <div className="flex items-center border-b border-gray-500">
@@ -237,23 +280,42 @@ const CareerForm = () => {
               />
             </div>
             {errors.expectedCTC && (
-              <p className="text-red-500 col-span-1 sm:col-span-2">{errors.expectedCTC}</p>
+              <p className="text-red-500 col-span-1 sm:col-span-2">
+                {errors.expectedCTC}
+              </p>
             )}
+
+            <div className="col-span-2">
+              <button
+                type="submit"
+                className="bg-primary hover:bg-primary text-white font-bold py-2 px-4 rounded-full w-full"
+              >
+                Submit Application
+              </button>
+            </div>
           </form>
 
-          {/* Submit Button */}
-          <div className="flex justify-center mt-6">
-            <button
-              type="submit"
-              className="px-6 py-3 bg-primary text-white font-semibold rounded hover:bg-primary-dark transition"
-            >
-              Submit Application
-            </button>
-          </div>
+          {/* Success Popup Modal */}
+          {isSuccess && (
+            <div className="fixed inset-0 bg-gray-800 bg-opacity-80 flex justify-center items-center">
+              <div className="bg-white rounded-lg p-6 shadow-lg">
+                <h2 className="text-2xl text-gray-800 font-bold mb-4">
+                  Application Submitted!
+                </h2>
+                <p>Your form has been successfully submitted. We'll get back to you soon!</p>
+                <button
+                  onClick={closeSuccessPopup}
+                  className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-      <Footer/>
-      <ChatBoat/>
+      <ChatBoat />
+      <Footer />
     </>
   );
 };
