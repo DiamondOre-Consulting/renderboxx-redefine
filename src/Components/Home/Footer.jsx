@@ -141,7 +141,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/RedefineGroup"
+                    href="https://www.instagram.com/chandermohan_rg?igsh=NTJvMmFnMWNud2Nu"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
