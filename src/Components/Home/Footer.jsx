@@ -6,8 +6,10 @@ import facebook from "../../assets/facebook.png";
 import insta from "../../assets/instagram.png";
 import youtube from "../../assets/youtube.png";
 
+
 const Footer = () => {
   return (
+    <>
     <footer className="relative overflow-hidden">
       <video
         autoPlay
@@ -16,13 +18,13 @@ const Footer = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
         <source src={footervedio} type="video/mp4" />
-        Your browser does not support the video tag.
+        
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 w-full p-4 py-6 lg:py-8">
         <div className="flex flex-col md:flex-row md:justify-between">
-          {/* About Section */}
-          <div className="mb-6 md:mb-0 flex flex-col max-w-lg">
+         
+          <div className="mb-6 md:mb-0 flex flex-col max-w-sm">
             <h1 className="text-3xl md:text-4xl text-gray-100 mb-4">
               <img src={logo} alt="Redefine Group Logo" className="w-32 md:w-40" />
             </h1>
@@ -116,7 +118,7 @@ const Footer = () => {
             </div>
 
             {/* Follow Us Section */}
-            <div className="md:ml-20">
+            <div className="md:ml-2">
               <h2 className="mb-6 text-lg font-semibold text-gray-100 uppercase">
                 FOLLOW US
               </h2>
@@ -150,13 +152,32 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+
+
+
+            <div className="md:-ml-10">
+              <h2 className="mb-6 text-lg font-semibold text-gray-100 uppercase">
+              LEGAL
+              </h2>
+              <ul class="text-gray-100 flex flex-col font-medium">
+                <Link to={'/privacy-policy'} class="">
+                    <a  class="hover:underline">Privacy Policy</a>
+                </Link>
+              
+                <Link to={'/terms-and-condition'} class="mb-4 mt-4">
+                    <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                </Link>
+            </ul>
+            </div>
           </div>
         </div>
 
-        {/* Call to Action Button */}
+   
     
       </div>
     </footer>
+    <div className="text-center py-2 bg-black text-white  text-xs md:text-lg">Copyright © 2025 (Doon Hatcheries Limited ). All rights reserved.</div>
+    </>
   );
 };
 

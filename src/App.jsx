@@ -11,6 +11,8 @@ import Project5Rishikexhparadise from "./Pages/Project5RishikeshParadise/Project
 import Project6TheFiveResort from "./Pages/Project6TheFiveResort/Project6TheFiveResort"
 import CareerForm from "./Pages/Home/CarrerForm"
 import Project7Gangavillas from "./Pages/Project7GangaVillas/Project7Gangavillas"
+import PrivacyPolicy from "./Components/Legal/PrivacyPolicy"
+import TermsAndCondition from "./Components/Legal/TermsAndCondition"
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/rishikeshparadise" element={<Project5Rishikexhparadise/>}/>
           <Route path="/thefivestarresort" element={<Project6TheFiveResort/>}/>
           <Route path="/gangavillas" element={<Project7Gangavillas/>}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+          <Route path="/terms-and-condition" element={<TermsAndCondition/>}/>
 
           </Route>
       </Routes>
