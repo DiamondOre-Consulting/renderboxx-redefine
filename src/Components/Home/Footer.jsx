@@ -176,7 +176,7 @@ const Footer = () => {
     
       </div>
     </footer>
-    <div className="text-center py-2 bg-black text-white  text-xs md:text-lg">Copyright © 2025 (Doon Hatcheries Limited ). All rights reserved.</div>
+    <div className="text-center py-2 bg-black text-white  text-xs md:text-lg">Copyright © 2025 Doon Hatcheries Limited. All rights reserved.</div>
     </>
   );
 };
