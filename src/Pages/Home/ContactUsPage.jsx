@@ -122,7 +122,7 @@ const ContactUsPage = () => {
                   <br /> New Delhi – 110019
                 </p>
                 <p className="text-black text-lg font-semibold">
-                  Tel: +91 9582000035
+                  Tel: +91 9582000035, +91 9667829969
                   <br /> Email: support@redefinegroup.com
                 </p>
               </div>

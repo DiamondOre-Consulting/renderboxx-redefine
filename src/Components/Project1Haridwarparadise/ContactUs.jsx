@@ -71,7 +71,7 @@ const ContactUs = () => {
                     Contact
                   </h3>
                   <p class="text-gray-600 ">
-                    Mobile: +91 9582000035
+                    Mobile: +91 9582000035, +91 9667829969
                   </p>
                   <p class="text-gray-600 ">
                     Mail: support@redefinegroup.com
